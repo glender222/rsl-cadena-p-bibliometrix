@@ -1,0 +1,25 @@
+trying URL 'https://packagemanager.posit.co/cran/__linux__/trixie/latest/src/contrib/bibliometrix_5.5.0.tar.gz'
+Content type 'binary/octet-stream' length 2279809 bytes (2.2 MB)
+==================================================
+downloaded 2.2 MB
+
+* installing *source* package ‘bibliometrix’ ...
+** this is package ‘bibliometrix’ version ‘5.5.0’
+** package ‘bibliometrix’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (bibliometrix)
+
+The downloaded source packages are in
+	‘/tmp/Rtmpyy70dO/downloaded_packages’
+Paquetes listos. bibliometrix  5.5.0 

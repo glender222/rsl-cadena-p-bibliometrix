@@ -1,0 +1,12 @@
+VALIDACIONES COMPLETADAS
+Registros brutos: 738
+Documentos unicos: 637
+Filas de duplicados consolidadas: 101
+Frecuencias de keywords verificadas: 434
+Enlaces de coocurrencia verificados: 203
+Enlaces de acoplamiento normalizado verificados: 252
+Cuatro redes: etiquetas sin interseccion de rectangulos
+Paises: sin repeticiones dentro de cada documento
+MD5 de los cinco exports: sin cambios
+Coordenadas factoriales: proceden de conceptualStructure, sin desplazamiento estadistico
+Semilla de disposicion y clustering: 20261101

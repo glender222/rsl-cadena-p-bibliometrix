@@ -1,0 +1,35 @@
+also installing the dependencies ‘contentanalysis’, ‘plotly’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/trixie/latest/src/contrib/contentanalysis_1.1.1.tar.gz'
+trying URL 'https://packagemanager.posit.co/cran/__linux__/trixie/latest/src/contrib/plotly_4.12.1.tar.gz'
+trying URL 'https://packagemanager.posit.co/cran/__linux__/trixie/latest/src/contrib/bibliometrix_5.5.0.tar.gz'
+begin installing package ‘contentanalysis’
+begin installing package ‘plotly’
+make: *** [Makefile:9: plotly.ts] Error 3
+* installing *source* package ‘contentanalysis’ ...
+** this is package ‘contentanalysis’ version ‘1.1.1’
+** package ‘contentanalysis’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (contentanalysis)
+make: Target 'all' not remade because of errors.
+ERROR: failed to lock directory ‘/home/glender/.local/share/cadena-p/R-library’ for modifying
+Try removing ‘/home/glender/.local/share/cadena-p/R-library/00LOCK-plotly’
+
+The downloaded source packages are in
+	‘/tmp/RtmpvZukeq/downloaded_packages’
+Warning message:
+In install.packages(missing, lib = lib) :
+  installation of 2 packages failed:  ‘plotly’, ‘bibliometrix’
+Error: all(vapply(needed, requireNamespace, logical(1), quietly = TRUE)) is not TRUE
+Execution halted

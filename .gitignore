@@ -1,0 +1,10 @@
+.Rlib/
+.Rhistory
+.RData
+.Renviron
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store

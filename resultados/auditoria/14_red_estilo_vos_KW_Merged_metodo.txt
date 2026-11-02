@@ -1,0 +1,11 @@
+Red generada en R con bibliometrix::biblioNetwork y bibliometrix::networkPlot.
+181 documentos con KW_Merged, de 637 documentos únicos.
+Preselección: hasta 65 términos con frecuencia documental >=2. Se eliminan términos aislados sin enlaces.
+No se fusionan singular/plural ni se añaden sinónimos.
+Louvain ponderado: número de comunidades calculado, sin fijarlo en tres.
+Posición inicial: networkPlot, normalización de asociación y Fruchterman-Reingold.
+Ajuste visual: compresión radial y posiciones de nodos/etiquetas centradas sin intersección de rectángulos.
+Los desplazamientos son gráficos; no modifican coocurrencias, frecuencias, pertenencias ni métricas.
+Verificados por recuento documental: 1200 enlaces.
+Colores identifican comunidades; área de círculos representa frecuencia documental.
+No se utilizó VOSviewer. El estilo se inspira en la imagen del usuario.

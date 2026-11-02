@@ -1,0 +1,82 @@
+trying URL 'https://packagemanager.posit.co/cran/__linux__/trixie/latest/src/contrib/curl_8.1.0.tar.gz'
+trying URL 'https://packagemanager.posit.co/cran/__linux__/trixie/latest/src/contrib/pdftools_3.9.1.tar.gz'
+begin installing package ‘curl’
+* installing *source* package ‘curl’ ...
+** this is package ‘curl’ version ‘8.1.0’
+** package ‘curl’ successfully unpacked and MD5 sums checked
+** using staged installation
+Found pkg-config cflags and libs!
+Using PKG_CFLAGS=-I/home/glender/.local/share/cadena-p/system/usr/include/x86_64-linux-gnu 
+Using PKG_LIBS=-L/home/glender/.local/share/cadena-p/system/usr/lib/x86_64-linux-gnu -lcurl -lssl -lcrypto 
+** libs
+using C compiler: ‘gcc (Debian 14.2.0-19) 14.2.0’
+make[1]: Entering directory '/tmp/RtmpQQ2Uo9/R.INSTALLbcc941ffa8b84/curl/src'
+gcc -std=gnu23 -I"/usr/share/R/include" -DNDEBUG -I/home/glender/.local/share/cadena-p/system/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -ffile-prefix-map=/build/reproducible-path/r-base-4.5.0=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2  -c callbacks.c -o callbacks.o
+gcc -std=gnu23 -I"/usr/share/R/include" -DNDEBUG -I/home/glender/.local/share/cadena-p/system/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -ffile-prefix-map=/build/reproducible-path/r-base-4.5.0=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2  -c curl.c -o curl.o
+gcc -std=gnu23 -I"/usr/share/R/include" -DNDEBUG -I/home/glender/.local/share/cadena-p/system/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -ffile-prefix-map=/build/reproducible-path/r-base-4.5.0=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2  -c download.c -o download.o
+gcc -std=gnu23 -I"/usr/share/R/include" -DNDEBUG -I/home/glender/.local/share/cadena-p/system/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -ffile-prefix-map=/build/reproducible-path/r-base-4.5.0=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2  -c dryrun.c -o dryrun.o
+gcc -std=gnu23 -I"/usr/share/R/include" -DNDEBUG -I/home/glender/.local/share/cadena-p/system/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -ffile-prefix-map=/build/reproducible-path/r-base-4.5.0=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2  -c escape.c -o escape.o
+gcc -std=gnu23 -I"/usr/share/R/include" -DNDEBUG -I/home/glender/.local/share/cadena-p/system/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -ffile-prefix-map=/build/reproducible-path/r-base-4.5.0=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2  -c fetch.c -o fetch.o
+gcc -std=gnu23 -I"/usr/share/R/include" -DNDEBUG -I/home/glender/.local/share/cadena-p/system/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -ffile-prefix-map=/build/reproducible-path/r-base-4.5.0=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2  -c findport.c -o findport.o
+gcc -std=gnu23 -I"/usr/share/R/include" -DNDEBUG -I/home/glender/.local/share/cadena-p/system/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -ffile-prefix-map=/build/reproducible-path/r-base-4.5.0=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2  -c form.c -o form.o
+gcc -std=gnu23 -I"/usr/share/R/include" -DNDEBUG -I/home/glender/.local/share/cadena-p/system/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -ffile-prefix-map=/build/reproducible-path/r-base-4.5.0=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2  -c getdate.c -o getdate.o
+gcc -std=gnu23 -I"/usr/share/R/include" -DNDEBUG -I/home/glender/.local/share/cadena-p/system/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -ffile-prefix-map=/build/reproducible-path/r-base-4.5.0=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2  -c handle.c -o handle.o
+gcc -std=gnu23 -I"/usr/share/R/include" -DNDEBUG -I/home/glender/.local/share/cadena-p/system/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -ffile-prefix-map=/build/reproducible-path/r-base-4.5.0=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2  -c ieproxy.c -o ieproxy.o
+gcc -std=gnu23 -I"/usr/share/R/include" -DNDEBUG -I/home/glender/.local/share/cadena-p/system/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -ffile-prefix-map=/build/reproducible-path/r-base-4.5.0=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2  -c init.c -o init.o
+gcc -std=gnu23 -I"/usr/share/R/include" -DNDEBUG -I/home/glender/.local/share/cadena-p/system/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -ffile-prefix-map=/build/reproducible-path/r-base-4.5.0=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2  -c interrupt.c -o interrupt.o
+gcc -std=gnu23 -I"/usr/share/R/include" -DNDEBUG -I/home/glender/.local/share/cadena-p/system/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -ffile-prefix-map=/build/reproducible-path/r-base-4.5.0=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2  -c multi.c -o multi.o
+gcc -std=gnu23 -I"/usr/share/R/include" -DNDEBUG -I/home/glender/.local/share/cadena-p/system/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -ffile-prefix-map=/build/reproducible-path/r-base-4.5.0=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2  -c nslookup.c -o nslookup.o
+gcc -std=gnu23 -I"/usr/share/R/include" -DNDEBUG -I/home/glender/.local/share/cadena-p/system/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -ffile-prefix-map=/build/reproducible-path/r-base-4.5.0=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2  -c options.c -o options.o
+gcc -std=gnu23 -I"/usr/share/R/include" -DNDEBUG -I/home/glender/.local/share/cadena-p/system/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -ffile-prefix-map=/build/reproducible-path/r-base-4.5.0=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2  -c reflist.c -o reflist.o
+gcc -std=gnu23 -I"/usr/share/R/include" -DNDEBUG -I/home/glender/.local/share/cadena-p/system/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -ffile-prefix-map=/build/reproducible-path/r-base-4.5.0=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2  -c split.c -o split.o
+gcc -std=gnu23 -I"/usr/share/R/include" -DNDEBUG -I/home/glender/.local/share/cadena-p/system/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -ffile-prefix-map=/build/reproducible-path/r-base-4.5.0=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2  -c ssl.c -o ssl.o
+gcc -std=gnu23 -I"/usr/share/R/include" -DNDEBUG -I/home/glender/.local/share/cadena-p/system/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -ffile-prefix-map=/build/reproducible-path/r-base-4.5.0=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2  -c typechecking.c -o typechecking.o
+gcc -std=gnu23 -I"/usr/share/R/include" -DNDEBUG -I/home/glender/.local/share/cadena-p/system/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -ffile-prefix-map=/build/reproducible-path/r-base-4.5.0=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2  -c urlparser.c -o urlparser.o
+gcc -std=gnu23 -I"/usr/share/R/include" -DNDEBUG -I/home/glender/.local/share/cadena-p/system/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -ffile-prefix-map=/build/reproducible-path/r-base-4.5.0=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2  -c utils.c -o utils.o
+gcc -std=gnu23 -I"/usr/share/R/include" -DNDEBUG -I/home/glender/.local/share/cadena-p/system/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -ffile-prefix-map=/build/reproducible-path/r-base-4.5.0=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2  -c version.c -o version.o
+gcc -std=gnu23 -I"/usr/share/R/include" -DNDEBUG -I/home/glender/.local/share/cadena-p/system/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -ffile-prefix-map=/build/reproducible-path/r-base-4.5.0=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2  -c winidn.c -o winidn.o
+gcc -std=gnu23 -I"/usr/share/R/include" -DNDEBUG -I/home/glender/.local/share/cadena-p/system/usr/include/x86_64-linux-gnu  -DSTRICT_R_HEADERS -DR_NO_REMAP     -fvisibility=hidden -fpic  -g -O2 -ffile-prefix-map=/build/reproducible-path/r-base-4.5.0=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2  -c writer.c -o writer.o
+gcc -std=gnu23 -shared -L/usr/lib/R/lib -Wl,-z,relro -o curl.so callbacks.o curl.o download.o dryrun.o escape.o fetch.o findport.o form.o getdate.o handle.o ieproxy.o init.o interrupt.o multi.o nslookup.o options.o reflist.o split.o ssl.o typechecking.o urlparser.o utils.o version.o winidn.o writer.o -L/home/glender/.local/share/cadena-p/system/usr/lib/x86_64-linux-gnu -lcurl -lssl -lcrypto -L/usr/lib/R/lib -lR
+make[1]: Leaving directory '/tmp/RtmpQQ2Uo9/R.INSTALLbcc941ffa8b84/curl/src'
+installing to /home/glender/.local/share/cadena-p/R-library/00LOCK-curl/00new/curl/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (curl)
+begin installing package ‘pdftools’
+* installing *source* package ‘pdftools’ ...
+** this is package ‘pdftools’ version ‘3.9.1’
+** package ‘pdftools’ successfully unpacked and MD5 sums checked
+** using staged installation
+Found pkg-config cflags and libs!
+Using PKG_CFLAGS=-I/home/glender/.local/share/cadena-p/system/usr/include/poppler/cpp 
+Using PKG_LIBS=-L/home/glender/.local/share/cadena-p/system/usr/lib/x86_64-linux-gnu -lpoppler-cpp 
+** libs
+using C++ compiler: ‘g++ (Debian 14.2.0-19) 14.2.0’
+make[1]: Entering directory '/tmp/RtmpMatmqU/R.INSTALLbcf44148a77ca/pdftools/src'
+g++ -std=gnu++17 -I"/usr/share/R/include" -DNDEBUG -I/home/glender/.local/share/cadena-p/system/usr/include/poppler/cpp  -DSTRICT_R_HEADERS -DR_NO_REMAP -I'/home/glender/.local/share/cadena-p/R-library/Rcpp/include'    -fvisibility=hidden -fpic  -g -O2 -ffile-prefix-map=/build/reproducible-path/r-base-4.5.0=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2   -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -I"/usr/share/R/include" -DNDEBUG -I/home/glender/.local/share/cadena-p/system/usr/include/poppler/cpp  -DSTRICT_R_HEADERS -DR_NO_REMAP -I'/home/glender/.local/share/cadena-p/R-library/Rcpp/include'    -fvisibility=hidden -fpic  -g -O2 -ffile-prefix-map=/build/reproducible-path/r-base-4.5.0=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2   -c bindings.cpp -o bindings.o
+g++ -std=gnu++17 -shared -L/usr/lib/R/lib -Wl,-z,relro -o pdftools.so RcppExports.o bindings.o -L/home/glender/.local/share/cadena-p/system/usr/lib/x86_64-linux-gnu -lpoppler-cpp -L/usr/lib/R/lib -lR
+make[1]: Leaving directory '/tmp/RtmpMatmqU/R.INSTALLbcf44148a77ca/pdftools/src'
+installing to /home/glender/.local/share/cadena-p/R-library/00LOCK-pdftools/00new/pdftools/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (pdftools)
+
+The downloaded source packages are in
+	‘/tmp/RtmpEH1H6Q/downloaded_packages’

@@ -1,0 +1,435 @@
+"termino","documentos"
+"unlearnable examples",23
+"privacy protection",12
+"data poisoning",11
+"adversarial machine learning",8
+"diffusion models",8
+"machine learning",8
+"training",7
+"adversarial examples",6
+"data models",6
+"face recognition",6
+"perturbation methods",6
+"poisoning attack",6
+"adversarial perturbation",5
+"anomaly detection",5
+"contrastive learning",5
+"deep learning",5
+"deep neural networks",5
+"noise",5
+"availability attacks",4
+"data privacy",4
+"data protection",4
+"poisoning attacks",4
+"protective perturbation",4
+"unlearnable example",4
+"accuracy",3
+"adversarial attack",3
+"computer vision",3
+"diffusion model",3
+"facial recognition",3
+"feature extraction",3
+"iot",3
+"network intrusion detection",3
+"privacy",3
+"robustness",3
+"self-supervised learning",3
+"shortcut learning",3
+"steganography",3
+"watermarking",3
+"adversarial attacks",2
+"adversarial example",2
+"adversarial training",2
+"artificial intelligence",2
+"availability",2
+"availability attack",2
+"availability poisoning",2
+"backdoor attack",2
+"backdoor attacks",2
+"copyright protection",2
+"cyberattacks",2
+"cybersecurity",2
+"data availability",2
+"data availability attacks",2
+"data privacy protection",2
+"data security",2
+"ddos",2
+"deep neural network",2
+"deepfake",2
+"deepfake defense",2
+"differential privacy",2
+"ensemble learning",2
+"false data injection (fdi)",2
+"federated learning (fl)",2
+"generators",2
+"ids",2
+"image recognition",2
+"internet of things",2
+"internet of things (iot)",2
+"iot security",2
+"jamming attacks",2
+"machine unlearning",2
+"multimodal unlearnable examples",2
+"network security",2
+"neural networks",2
+"poisoning",2
+"privacy-preserving",2
+"proactive defense",2
+"protection",2
+"semantics",2
+"speaker verification",2
+"supervised learning",2
+"training data",2
+"transform coding",2
+"unauthorized exploitation",2
+"unlearnability",2
+"3d point clouds",1
+"5g",1
+"6g drone networks",1
+"acetylene hydrogenation",1
+"active learning",1
+"active perturbation strategy",1
+"active security protection",1
+"active sensing",1
+"adaptive protection",1
+"advanced metering infrastructure (ami)",1
+"adversarial attack and defense",1
+"adversarial attack and defense methods",1
+"adversarial defense",1
+"adversarial example detection",1
+"adversarial learning",1
+"adversarial ml",1
+"adversarial purification",1
+"adversarial robust attacks",1
+"agnostic approach",1
+"ai security",1
+"ai security verification",1
+"algorithmic randomness, formal learning theory",1
+"and data privacy preservation",1
+"anomaly",1
+"anti-coking",1
+"anti-customization",1
+"anti-spoofing",1
+"artificial neural networks",1
+"asvspoof",1
+"attack classification",1
+"audio systems",1
+"authentication and data sharing",1
+"autoencoder",1
+"automatic generation control",1
+"automatic generation control (agc)",1
+"availability backdoor attack",1
+"availability dataset",1
+"battery-depletion attacks",1
+"biometrics",1
+"biomimetic catalysis",1
+"blind face restoration",1
+"blockchain",1
+"boolean function learning",1
+"can bus attacks",1
+"carnap",1
+"catalyst deactivation",1
+"challenge-response pairs (crps) security protection",1
+"character",1
+"class-universal attack",1
+"classifier",1
+"clean-label",1
+"cleaning",1
+"cloaking",1
+"cloud platforms",1
+"cloud security",1
+"clustering models",1
+"communication efficiency",1
+"compression resistance",1
+"computational learning theory",1
+"computational modeling",1
+"computer crime",1
+"computer vision for social good",1
+"concavity-convexity measurement",1
+"conceptual scope",1
+"constraint satisfaction",1
+"contrastive decoupling learning",1
+"contrastive poisoning",1
+"contrastive vision-language pre-training models",1
+"controller area network",1
+"cosine similarity",1
+"countermeasures",1
+"cps security",1
+"cross-modal attack",1
+"cross-modal interactions",1
+"cryptography",1
+"customary sense",1
+"cyber attacks",1
+"cyber security",1
+"cyberattack",1
+"cybersecurity measures",1
+"data augmentation",1
+"data augmentations",1
+"data availability and integrity attack (daia)",1
+"data cleaning",1
+"data heterogeneity",1
+"data integrity",1
+"data poisoning attacks",1
+"data protection approaches",1
+"data purification",1
+"data-driven approach",1
+"database security",1
+"dataset recovery",1
+"dc microgrid",1
+"ddos attacks",1
+"deep hiding",1
+"deep learning -> adversarial learning",1
+"deep learning models",1
+"deep learning privacy",1
+"deepfake detection",1
+"deepfake disruption",1
+"deepfakes",1
+"delay attacks",1
+"denial of service",1
+"denial-of-service attack",1
+"denoising",1
+"der",1
+"detection",1
+"differing-inputs obfuscation",1
+"diffusion-based purification method",1
+"discrete cosine transforms",1
+"dnp3",1
+"dos",1
+"dos (denial of service)",1
+"dos detection techniques",1
+"drl",1
+"dynamic key-dependent cryptographic algorithms",1
+"e-health",1
+"edge ai",1
+"edge pruning",1
+"edge/fog computing",1
+"education",1
+"eer",1
+"electronic mail",1
+"emotion recognition",1
+"energy-latency attacks",1
+"ensemble attack",1
+"entity availability attack",1
+"event camera",1
+"event vision",1
+"event-based vision",1
+"faces",1
+"facial attribute manipulation",1
+"facial expression",1
+"feature selection",1
+"feature subspace",1
+"fl",1
+"flourishing",1
+"forensics acquisition and data recovery",1
+"forest-fire detection network",1
+"fourier",1
+"frege",1
+"frequency-domain analysis",1
+"general data protection regulation",1
+"general robustness",1
+"generative ai",1
+"gmm",1
+"google lens",1
+"gradient accumulation",1
+"gradient estimation",1
+"graph neural networks",1
+"graph representation learning",1
+"graph sanitization",1
+"guaranteed model adequacy",1
+"hardware performance counters",1
+"hide-and-seek",1
+"hierarchy of senses",1
+"hsv (hue saturation value)",1
+"identity customization",1
+"identity protection",1
+"identity theorem",1
+"iec 61499",1
+"image classification",1
+"image cloaking",1
+"image features",1
+"image inpainting",1
+"image protection",1
+"image-to-image models",1
+"imperceptibility",1
+"imperceptible perturbation",1
+"implants",1
+"indirect sense",1
+"inductive bias",1
+"industrial automation and control systems",1
+"information dispersal algorithm",1
+"information security",1
+"information systems security",1
+"integrity and confidentiality",1
+"intellectual property protection",1
+"interpretable",1
+"intersections of halfspaces",1
+"intrusion detection and prevention",1
+"invisibility cloak",1
+"iomt",1
+"iov",1
+"isolation forest",1
+"iterative optimization",1
+"jaccard similarity",1
+"jpeg",1
+"kripke",1
+"latency attacks",1
+"ldm-based talking-head generation",1
+"learning (artificial intelligence)",1
+"lightweight data protection",1
+"lightweight privacy preservation",1
+"load forecasting",1
+"load modeling",1
+"location awareness",1
+"lorawan",1
+"low-altitude internet of things (laiot)",1
+"machine learning (ml)",1
+"malware detection",1
+"metadata",1
+"meter coding (mc)",1
+"microgrids",1
+"mobile cloud computing",1
+"mobile edge computing (mec)",1
+"model fingerprinting",1
+"modeling",1
+"modifier adaptation",1
+"motion tracking",1
+"moving target defense (mtd)",1
+"multi-agent reinforcement learning",1
+"multi-agent systems",1
+"multi-attribute physical-layer authentication (pla)",1
+"multi-cloaks",1
+"multi-level data sharing",1
+"multimodal contrastive learning",1
+"multimodal data",1
+"multimodal learning",1
+"multiple inputs resolution",1
+"music",1
+"network protection",1
+"network-on-chip",1
+"non-maximum suppression",1
+"ns-3",1
+"object detection",1
+"observers",1
+"offensive and defensive",1
+"on-device machine learning",1
+"one-class classifier",1
+"opencv",1
+"optimization",1
+"overparameterization",1
+"parallel data processing",1
+"passive recovery",1
+"pattern recognition",1
+"peer-to-peer federated learning",1
+"person-specific mask",1
+"personalization",1
+"personalized federated learning",1
+"personalized text-to-image model",1
+"perturbation optimization",1
+"perturbation simulation",1
+"phasor measurement units",1
+"phishing webpage detection",1
+"photo capturing and sharing",1
+"physical layer authentication",1
+"physically unclonable functions (pufs)",1
+"physics-informed robustness",1
+"plant-model mismatch",1
+"poison defense",1
+"poisoned pre-trained encoder",1
+"portraiture privacy",1
+"power system dynamics",1
+"power system security",1
+"privacy protection algorithm",1
+"privacy protections",1
+"proactive detection and localization",1
+"proactive perturbation",1
+"proactive perturbation-aware defense",1
+"programmable logic controllers",1
+"prompt learning",1
+"protec-tive perturbations",1
+"quadratic approximation",1
+"radio frequency fingerprint identification",1
+"rate paradox",1
+"real-analytic functions",1
+"real-time optimization",1
+"red-teaming",1
+"red-teaming protective perturbation",1
+"renewable energy sources",1
+"reverse search",1
+"reversible data hiding",1
+"reversible unlearnable examples",1
+"roberta",1
+"robot hack",1
+"robot hack acquistion",1
+"robot operating system",1
+"robotic interface",1
+"robotic perception",1
+"robust",1
+"robust aggregation",1
+"robustness certification",1
+"ros 2",1
+"safeguard event dataset",1
+"scada systems",1
+"secure ai",1
+"security",1
+"security and performance analysis",1
+"security and privacy",1
+"segmentation",1
+"self-activation",1
+"semantic images",1
+"shamir secret sharing (sss)",1
+"shap analysis",1
+"smart camera",1
+"smart contracts fog computing",1
+"smart grid",1
+"smartgridddos",1
+"soft sensors",1
+"spatial-temporal modeling",1
+"spectrogram",1
+"speech synthesis",1
+"spiking neural networks",1
+"sponge attacks",1
+"sponge examples",1
+"spoofing attack detection",1
+"stealthiness",1
+"stealthy deception attack",1
+"support vector machine (svm)",1
+"svdd",1
+"svr",1
+"symbols",1
+"syntactics",1
+"system-on-a-chip",1
+"tamper localization",1
+"targeted attack",1
+"targeted poisoning attack",1
+"temporal unlearnable examples",1
+"threat monitoring",1
+"time delay",1
+"time series analysis",1
+"topology analysis",1
+"toxicology",1
+"transformers",1
+"transport layer security",1
+"unlearnable",1
+"unlearnable data",1
+"unlearnable dataset",1
+"unlearnable samples",1
+"unlearnbale examples",1
+"unlearning",1
+"vacuity",1
+"vehicular networks",1
+"video object segmentation",1
+"video object tracking",1
+"videos",1
+"viewpoint optimization",1
+"vision transformer",1
+"vision-language models",1
+"visual face privacy",1
+"visual fidelity",1
+"visual privacy",1
+"voice protection",1
+"voltage control",1
+"vr",1
+"watermarking technique",1
+"wavelet",1
+"web defacement detection",1
+"wireless body sensors network",1

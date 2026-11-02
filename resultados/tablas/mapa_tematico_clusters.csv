@@ -1,0 +1,64 @@
+"groups","words","name_full","n","centrality","density","rcentrality","rdensity","name","color","freq"
+1,"unlearnable examples 15.5
+privacy protection 8.5
+training 6
+perturbation methods 5
+data models 5
+noise 4.2
+face recognition 4
+watermarking 2.8
+accuracy 2.5
+feature extraction 2.5","unlearnable examples
+privacy protection
+training",18,2.5071663843403,93.4822866344605,6,6,"unlearnable examples","#E41A1C80",92
+2,"data poisoning 8.6
+adversarial machine learning 6.5
+machine learning 6.2
+poisoning attack 4.8
+anomaly detection 4.1
+deep neural networks 3.7
+availability attacks 3.3
+poisoning attacks 3.1
+network intrusion detection 2.5
+iot 2.5","data poisoning
+adversarial machine learning
+machine learning",20,1.59310696248196,55.5214646464646,5,3,"data poisoning","#377EB880",77
+3,"diffusion models 9.8
+deep learning 6.3
+protective perturbation 4.7
+unlearnable example 4.6
+robustness 3.9
+facial recognition 3.7
+computer vision 3.5
+copyright protection 2.8
+multimodal unlearnable examples 2.7
+data privacy protection 2.5","diffusion models
+deep learning
+protective perturbation",15,1.51569444444444,52.9166666666667,4,2,"diffusion models","#4DAF4A80",46
+4,"adversarial examples 13.9
+data privacy 9.4
+data protection 9.2
+diffusion model 7
+deepfake defense 4.7
+deep neural network 4.7
+machine unlearning 4.6","adversarial examples
+data privacy
+data protection",7,0.430555555555556,51.2896825396825,3,1,"adversarial examples","#984EA380",23
+5,"contrastive learning 6.9
+adversarial perturbation 6.8
+adversarial attack 4.5
+self-supervised learning 4.4
+steganography 4.1
+adversarial training 3
+data availability attacks 3
+supervised learning 3
+proactive defense 2.9
+availability poisoning 2.9","contrastive learning
+adversarial perturbation
+adversarial attack",15,0,63.8888888888889,1.5,4,"contrastive learning","#FF7F0080",39
+6,"ddos 13.1
+cyberattacks 13
+availability 12.9
+network security 12.8","ddos
+cyberattacks
+availability",4,0,75,1.5,5,"ddos","#A6562880",8

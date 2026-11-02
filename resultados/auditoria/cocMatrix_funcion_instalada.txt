@@ -1,0 +1,142 @@
+bibliometrix: 5.5.0 
+function (M, Field = "AU", type = "sparse", n = NULL, sep = ";", 
+    binary = TRUE, short = FALSE, remove.terms = NULL, synonyms = NULL) 
+{
+    size <- dim(M)
+    if (!"LABEL" %in% names(M)) 
+        row.names(M) <- M$SR
+    RowNames <- row.names(M)
+    if (Field == "KW_Merged") 
+        M <- M %>% mergeKeywords(force = FALSE)
+    if (Field %in% c("ID", "DE", "KW_Merged", "TI", "TI_TM", 
+        "AB", "AB_TM")) {
+        Fi <- strsplit(M[, Field], sep)
+        TERMS <- data.frame(item = trimws(unlist(Fi)), SR = rep(M$SR, 
+            lengths(Fi)))
+        if (length(synonyms) > 0 & is.character(synonyms)) {
+            s <- strsplit(toupper(synonyms), ";")
+            snew <- trimws(unlist(lapply(s, function(l) l[1])))
+            sold <- (lapply(s, function(l) {
+                l <- trimws(l[-1])
+            }))
+            for (i in 1:length(s)) {
+                TERMS$item[TERMS$item %in% unlist(sold[[i]])] <- snew[i]
+            }
+        }
+        TERMS <- TERMS %>% anti_join(data.frame(item = trimws(toupper(remove.terms))), 
+            by = "item") %>% mutate(item = trimws(item))
+        TERMS <- TERMS %>% group_by(SR) %>% summarize(item = paste(item, 
+            collapse = ";"))
+        M <- M %>% left_join(TERMS, by = "SR")
+        M[, Field] <- M$item
+        row.names(M) <- RowNames
+    }
+    if (Field == "CR") {
+        M$CR <- gsub("DOI;", "DOI ", as.character(M$CR))
+    }
+    if (Field %in% names(M)) {
+        Fi <- strsplit(as.character(M[, Field]), sep)
+    }
+    else {
+        return(print(paste("Field", Field, "is not a column name of input data frame")))
+    }
+    Fi <- lapply(Fi, trim.leading)
+    if (Field == "CR") {
+        Fi <- lapply(Fi, function(l) l <- l[nchar(l) > 10])
+    }
+    allField <- unlist(Fi)
+    allField <- allField[!is.na(allField)]
+    if (Field == "CR") {
+        ind <- which(substr(allField, 1, 1) != "(")
+        S <- allField
+        S[ind] <- gsub("\\).*", ")", allField[ind])
+        S[-ind] <- substr(S[-ind], 1, 100)
+        S <- gsub(",", " ", S)
+        S <- gsub(";", " ", S)
+        S <- reduceRefs(S)
+        allField <- trimES(S)
+        Fi <- lapply(Fi, function(l) {
+            l <- gsub("\\).*", ")", l)
+            l <- gsub(",", " ", l)
+            l <- gsub(";", " ", l)
+            l <- l[nchar(l) > 0]
+            l <- reduceRefs(l)
+            l <- trimES(l)
+            return(l)
+        })
+    }
+    else {
+        S <- gsub("\\,", ";", allField)
+        S <- sub("\\;", ",", S)
+        S <- sub("\\;", ",", S)
+        S <- gsub("\\;.*", "", S)
+        allField <- trimws(S)
+        Fi <- lapply(Fi, function(l) {
+            l <- gsub("\\,", ";", l)
+            l <- sub("\\;", ",", l)
+            l <- sub("\\;", ",", l)
+            l <- gsub("\\;.*", "", l)
+            l <- l[nchar(l) > 0]
+            l <- trimws(l)
+            return(l)
+        })
+    }
+    tabField <- sort(table(allField), decreasing = TRUE)
+    uniqueField <- names(tabField)
+    if (!is.null(n)) {
+        if ("NA" %in% uniqueField[1:n]) 
+            n <- n + 1
+        uniqueField <- uniqueField[1:n]
+    }
+    else if (isTRUE(short)) {
+        uniqueField <- names(tabField[tabField > 1])
+    }
+    if (length(uniqueField) < 1) {
+        print("Matrix is empty!!")
+        return(NA)
+    }
+    doc_ids <- rep(seq_along(Fi), lengths(Fi))
+    terms <- unlist(Fi)
+    col_ids <- match(terms, uniqueField)
+    valid <- !is.na(col_ids)
+    doc_ids <- doc_ids[valid]
+    col_ids <- col_ids[valid]
+    if (isTRUE(binary)) {
+        dup <- duplicated(paste(doc_ids, col_ids, sep = "_"))
+        WF <- Matrix::sparseMatrix(i = doc_ids[!dup], j = col_ids[!dup], 
+            x = 1, dims = c(size[1], length(uniqueField)), dimnames = list(rownames(M), 
+                uniqueField))
+    }
+    else {
+        WF <- Matrix::sparseMatrix(i = doc_ids, j = col_ids, 
+            x = 1, dims = c(size[1], length(uniqueField)), dimnames = list(rownames(M), 
+                uniqueField))
+    }
+    if (type == "matrix") {
+        WF <- as.matrix(WF)
+    }
+    WF <- WF[, !is.na(uniqueField), drop = FALSE]
+    ind <- which(colnames(WF) == "NA")
+    if (length(ind) > 0) {
+        WF <- WF[, -ind, drop = FALSE]
+    }
+    return(WF)
+}
+<bytecode: 0x55a41cfde7a0>
+<environment: namespace:bibliometrix>
+function (A) 
+{
+    ind <- unlist(regexec("*V[0-9]", A))
+    A[ind > -1] <- substr(A[ind > -1], 1, (ind[ind > -1] - 1))
+    ind <- unlist(regexec("*DOI ", A))
+    A[ind > -1] <- substr(A[ind > -1], 1, (ind[ind > -1] - 1))
+    return(A)
+}
+<bytecode: 0x55a41cfa4bf8>
+<environment: namespace:bibliometrix>
+function (x) 
+{
+    gsub("\\s+", " ", x)
+}
+<bytecode: 0x55a41cf95fb8>
+<environment: namespace:bibliometrix>

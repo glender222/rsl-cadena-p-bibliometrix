@@ -1,0 +1,10 @@
+* text=auto
+/P/** -text
+*.R text eol=lf
+*.sh text eol=lf
+*.md text eol=lf
+*.rds binary
+*.xls binary
+*.png binary
+*.pdf binary
+/resultados/tablas/*.csv -text

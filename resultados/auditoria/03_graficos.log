@@ -1,0 +1,21 @@
+biblioAnalysis
+coocurrencia
+colaboracion autores
+colaboracion paises
+factorial
+dendrograma
+mapa tematico
+ [1] "groups"      "words"       "name_full"   "n"           "centrality" 
+ [6] "density"     "rcentrality" "rdensity"    "name"        "color"      
+[11] "freq"       
+# A tibble: 6 × 11
+  groups words     name_full     n centrality density rcentrality rdensity name 
+   <dbl> <chr>     <chr>     <int>      <dbl>   <dbl>       <dbl>    <dbl> <chr>
+1      1 "unlearn… "unlearn…    18      2.51     93.5         6          6 unle…
+2      2 "data po… "data po…    20      1.59     55.5         5          3 data…
+3      3 "diffusi… "diffusi…    15      1.52     52.9         4          2 diff…
+4      4 "adversa… "adversa…     7      0.431    51.3         3          1 adve…
+5      5 "contras… "contras…    15      0        63.9         1.5        4 cont…
+6      6 "ddos 13… "ddos\nc…     4      0        75           1.5        5 ddos 
+# ℹ 2 more variables: color <chr>, freq <dbl>
+Graficos principales finalizados

@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='1008.00pt' height='648.00pt' viewBox='0 0 1008.00 648.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHwxMDA4LjAwfDAuMDB8NjQ4LjAw'>
+    <rect x='0.00' y='0.00' width='1008.00' height='648.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHwxMDA4LjAwfDAuMDB8NjQ4LjAw)'>
+<rect x='0.00' y='0.00' width='1008.00' height='648.00' style='stroke-width: 1.36; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMjQuOTF8OTc4LjExfDgyLjc0fDYwMi43Ng=='>
+    <rect x='24.91' y='82.74' width='953.21' height='520.02' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMjQuOTF8OTc4LjExfDgyLjc0fDYwMi43Ng==)'>
+<text x='501.51' y='358.30' text-anchor='middle' style='font-size: 42.68px; font-weight: bold;fill: #1D829D; font-family: "DejaVu Sans";' textLength='531.55px' lengthAdjust='spacingAndGlyphs'>unlearnable examples</text>
+<text x='490.51' y='407.46' text-anchor='middle' style='font-size: 29.23px; font-weight: bold;fill: #173B62; font-family: "DejaVu Sans";' textLength='302.00px' lengthAdjust='spacingAndGlyphs'>privacy protection</text>
+<text x='544.92' y='299.73' text-anchor='middle' style='font-size: 27.74px; font-weight: bold;fill: #2BA06D; font-family: "DejaVu Sans";' textLength='233.03px' lengthAdjust='spacingAndGlyphs'>data poisoning</text>
+<text x='511.93' y='259.02' text-anchor='middle' style='font-size: 22.81px; font-weight: bold;fill: #AF639D; font-family: "DejaVu Sans";' textLength='375.38px' lengthAdjust='spacingAndGlyphs'>adversarial machine learning</text>
+<text x='317.19' y='299.32' text-anchor='middle' style='font-size: 22.81px; font-weight: bold;fill: #B58326; font-family: "DejaVu Sans";' textLength='212.72px' lengthAdjust='spacingAndGlyphs'>diffusion models</text>
+<text x='450.49' y='445.23' text-anchor='middle' style='font-size: 22.81px; font-weight: bold;fill: #5E72A6; font-family: "DejaVu Sans";' textLength='222.89px' lengthAdjust='spacingAndGlyphs'>machine learning</text>
+<text x='693.05' y='400.81' text-anchor='middle' style='font-size: 20.97px; font-weight: bold;fill: #1D829D; font-family: "DejaVu Sans";' textLength='93.77px' lengthAdjust='spacingAndGlyphs'>training</text>
+<text x='782.08' y='302.12' text-anchor='middle' style='font-size: 18.99px; font-weight: bold;fill: #173B62; font-family: "DejaVu Sans";' textLength='228.89px' lengthAdjust='spacingAndGlyphs'>adversarial examples</text>
+<text x='264.43' y='396.72' text-anchor='middle' style='font-size: 18.99px; font-weight: bold;fill: #2BA06D; font-family: "DejaVu Sans";' textLength='132.00px' lengthAdjust='spacingAndGlyphs'>data models</text>
+<text x='655.53' y='443.58' text-anchor='middle' style='font-size: 18.99px; font-weight: bold;fill: #AF639D; font-family: "DejaVu Sans";' textLength='174.09px' lengthAdjust='spacingAndGlyphs'>face recognition</text>
+<text x='547.92' y='224.74' text-anchor='middle' style='font-size: 18.99px; font-weight: bold;fill: #B58326; font-family: "DejaVu Sans";' textLength='236.12px' lengthAdjust='spacingAndGlyphs'>perturbation methods</text>
+<text x='242.11' y='426.76' text-anchor='middle' style='font-size: 18.99px; font-weight: bold;fill: #5E72A6; font-family: "DejaVu Sans";' textLength='178.88px' lengthAdjust='spacingAndGlyphs'>poisoning attack</text>
+<text x='442.09' y='474.39' text-anchor='middle' style='font-size: 16.83px; font-weight: bold;fill: #1D829D; font-family: "DejaVu Sans";' textLength='233.34px' lengthAdjust='spacingAndGlyphs'>adversarial perturbation</text>
+<text x='231.22' y='265.20' text-anchor='middle' style='font-size: 16.83px; font-weight: bold;fill: #173B62; font-family: "DejaVu Sans";' textLength='176.62px' lengthAdjust='spacingAndGlyphs'>anomaly detection</text>
+<text x='840.19' y='399.43' text-anchor='middle' style='font-size: 16.83px; font-weight: bold;fill: #2BA06D; font-family: "DejaVu Sans";' textLength='191.89px' lengthAdjust='spacingAndGlyphs'>contrastive learning</text>
+<text x='837.88' y='359.72' text-anchor='middle' style='font-size: 16.83px; font-weight: bold;fill: #AF639D; font-family: "DejaVu Sans";' textLength='131.38px' lengthAdjust='spacingAndGlyphs'>deep learning</text>
+<text x='810.67' y='272.07' text-anchor='middle' style='font-size: 16.83px; font-weight: bold;fill: #B58326; font-family: "DejaVu Sans";' textLength='207.47px' lengthAdjust='spacingAndGlyphs'>deep neural networks</text>
+<text x='205.32' y='336.52' text-anchor='middle' style='font-size: 16.83px; font-weight: bold;fill: #5E72A6; font-family: "DejaVu Sans";' textLength='50.73px' lengthAdjust='spacingAndGlyphs'>noise</text>
+<text x='851.56' y='333.57' text-anchor='middle' style='font-size: 14.45px; font-weight: bold;fill: #1D829D; font-family: "DejaVu Sans";' textLength='155.16px' lengthAdjust='spacingAndGlyphs'>availability attacks</text>
+<text x='176.34' y='361.04' text-anchor='middle' style='font-size: 14.45px; font-weight: bold;fill: #173B62; font-family: "DejaVu Sans";' textLength='101.30px' lengthAdjust='spacingAndGlyphs'>data privacy</text>
+<text x='631.42' y='469.33' text-anchor='middle' style='font-size: 14.45px; font-weight: bold;fill: #2BA06D; font-family: "DejaVu Sans";' textLength='126.47px' lengthAdjust='spacingAndGlyphs'>data protection</text>
+<text x='351.44' y='225.48' text-anchor='middle' style='font-size: 14.45px; font-weight: bold;fill: #AF639D; font-family: "DejaVu Sans";' textLength='144.66px' lengthAdjust='spacingAndGlyphs'>poisoning attacks</text>
+<text x='224.01' y='452.69' text-anchor='middle' style='font-size: 14.45px; font-weight: bold;fill: #B58326; font-family: "DejaVu Sans";' textLength='192.44px' lengthAdjust='spacingAndGlyphs'>protective perturbation</text>
+<text x='834.27' y='425.17' text-anchor='middle' style='font-size: 14.45px; font-weight: bold;fill: #5E72A6; font-family: "DejaVu Sans";' textLength='171.31px' lengthAdjust='spacingAndGlyphs'>unlearnable example</text>
+<text x='177.21' y='308.66' text-anchor='middle' style='font-size: 11.74px; font-weight: bold;fill: #1D829D; font-family: "DejaVu Sans";' textLength='58.50px' lengthAdjust='spacingAndGlyphs'>accuracy</text>
+<text x='765.86' y='246.82' text-anchor='middle' style='font-size: 11.74px; font-weight: bold;fill: #173B62; font-family: "DejaVu Sans";' textLength='120.25px' lengthAdjust='spacingAndGlyphs'>adversarial attack</text>
+<text x='136.73' y='382.53' text-anchor='middle' style='font-size: 11.74px; font-weight: bold;fill: #2BA06D; font-family: "DejaVu Sans";' textLength='106.53px' lengthAdjust='spacingAndGlyphs'>computer vision</text>
+<text x='153.52' y='287.97' text-anchor='middle' style='font-size: 11.74px; font-weight: bold;fill: #AF639D; font-family: "DejaVu Sans";' textLength='102.45px' lengthAdjust='spacingAndGlyphs'>diffusion model</text>
+<text x='117.97' y='337.53' text-anchor='middle' style='font-size: 11.74px; font-weight: bold;fill: #B58326; font-family: "DejaVu Sans";' textLength='115.59px' lengthAdjust='spacingAndGlyphs'>facial recognition</text>
+<text x='733.86' y='227.01' text-anchor='middle' style='font-size: 11.74px; font-weight: bold;fill: #5E72A6; font-family: "DejaVu Sans";' textLength='120.59px' lengthAdjust='spacingAndGlyphs'>feature extraction</text>
+<text x='756.01' y='446.10' text-anchor='middle' style='font-size: 11.74px; font-weight: bold;fill: #1D829D; font-family: "DejaVu Sans";' textLength='17.69px' lengthAdjust='spacingAndGlyphs'>iot</text>
+<text x='433.91' y='495.89' text-anchor='middle' style='font-size: 11.74px; font-weight: bold;fill: #173B62; font-family: "DejaVu Sans";' textLength='185.03px' lengthAdjust='spacingAndGlyphs'>network intrusion detection</text>
+<text x='248.52' y='238.74' text-anchor='middle' style='font-size: 11.74px; font-weight: bold;fill: #2BA06D; font-family: "DejaVu Sans";' textLength='48.39px' lengthAdjust='spacingAndGlyphs'>privacy</text>
+<text x='106.34' y='313.45' text-anchor='middle' style='font-size: 11.74px; font-weight: bold;fill: #AF639D; font-family: "DejaVu Sans";' textLength='73.48px' lengthAdjust='spacingAndGlyphs'>robustness</text>
+<text x='570.82' y='196.94' text-anchor='middle' style='font-size: 11.74px; font-weight: bold;fill: #B58326; font-family: "DejaVu Sans";' textLength='160.12px' lengthAdjust='spacingAndGlyphs'>self-supervised learning</text>
+<text x='622.00' y='491.61' text-anchor='middle' style='font-size: 11.74px; font-weight: bold;fill: #5E72A6; font-family: "DejaVu Sans";' textLength='114.61px' lengthAdjust='spacingAndGlyphs'>shortcut learning</text>
+<text x='750.01' y='468.27' text-anchor='middle' style='font-size: 11.74px; font-weight: bold;fill: #1D829D; font-family: "DejaVu Sans";' textLength='99.83px' lengthAdjust='spacingAndGlyphs'>steganography</text>
+<text x='435.80' y='196.59' text-anchor='middle' style='font-size: 11.74px; font-weight: bold;fill: #173B62; font-family: "DejaVu Sans";' textLength='92.62px' lengthAdjust='spacingAndGlyphs'>watermarking</text>
+<text x='145.47' y='399.10' text-anchor='middle' style='font-size: 8.54px; font-weight: bold;fill: #2BA06D; font-family: "DejaVu Sans";' textLength='92.47px' lengthAdjust='spacingAndGlyphs'>adversarial attacks</text>
+<text x='267.77' y='470.30' text-anchor='middle' style='font-size: 8.54px; font-weight: bold;fill: #AF639D; font-family: "DejaVu Sans";' textLength='97.73px' lengthAdjust='spacingAndGlyphs'>adversarial example</text>
+<text x='817.88' y='444.12' text-anchor='middle' style='font-size: 8.54px; font-weight: bold;fill: #B58326; font-family: "DejaVu Sans";' textLength='95.14px' lengthAdjust='spacingAndGlyphs'>adversarial training</text>
+<text x='331.97' y='203.60' text-anchor='middle' style='font-size: 8.54px; font-weight: bold;fill: #5E72A6; font-family: "DejaVu Sans";' textLength='99.34px' lengthAdjust='spacingAndGlyphs'>artificial intelligence</text>
+<text x='88.83' y='354.20' text-anchor='middle' style='font-size: 8.54px; font-weight: bold;fill: #1D829D; font-family: "DejaVu Sans";' textLength='53.17px' lengthAdjust='spacingAndGlyphs'>availability</text>
+<text x='723.37' y='207.83' text-anchor='middle' style='font-size: 8.54px; font-weight: bold;fill: #173B62; font-family: "DejaVu Sans";' textLength='86.53px' lengthAdjust='spacingAndGlyphs'>availability attack</text>
+<text x='168.29' y='240.70' text-anchor='middle' style='font-size: 8.54px; font-weight: bold;fill: #2BA06D; font-family: "DejaVu Sans";' textLength='103.16px' lengthAdjust='spacingAndGlyphs'>availability poisoning</text>
+<text x='232.89' y='218.68' text-anchor='middle' style='font-size: 8.54px; font-weight: bold;fill: #AF639D; font-family: "DejaVu Sans";' textLength='77.98px' lengthAdjust='spacingAndGlyphs'>backdoor attack</text>
+<text x='102.48' y='415.43' text-anchor='middle' style='font-size: 8.54px; font-weight: bold;fill: #B58326; font-family: "DejaVu Sans";' textLength='83.06px' lengthAdjust='spacingAndGlyphs'>backdoor attacks</text>
+<text x='266.74' y='485.64' text-anchor='middle' style='font-size: 8.54px; font-weight: bold;fill: #5E72A6; font-family: "DejaVu Sans";' textLength='98.98px' lengthAdjust='spacingAndGlyphs'>copyright protection</text>
+<text x='938.94' y='356.07' text-anchor='middle' style='font-size: 8.54px; font-weight: bold;fill: #1D829D; font-family: "DejaVu Sans";' textLength='62.19px' lengthAdjust='spacingAndGlyphs'>cyberattacks</text>
+<text x='717.32' y='487.14' text-anchor='middle' style='font-size: 8.54px; font-weight: bold;fill: #173B62; font-family: "DejaVu Sans";' textLength='65.48px' lengthAdjust='spacingAndGlyphs'>cybersecurity</text>
+<text x='571.33' y='507.97' text-anchor='middle' style='font-size: 8.54px; font-weight: bold;fill: #2BA06D; font-family: "DejaVu Sans";' textLength='77.83px' lengthAdjust='spacingAndGlyphs'>data availability</text>
+<text x='505.75' y='177.93' text-anchor='middle' style='font-size: 8.54px; font-weight: bold;fill: #AF639D; font-family: "DejaVu Sans";' textLength='116.27px' lengthAdjust='spacingAndGlyphs'>data availability attacks</text>
+<text x='418.48' y='512.32' text-anchor='middle' style='font-size: 8.54px; font-weight: bold;fill: #B58326; font-family: "DejaVu Sans";' textLength='112.83px' lengthAdjust='spacingAndGlyphs'>data privacy protection</text>
+<text x='939.60' y='375.06' text-anchor='middle' style='font-size: 8.54px; font-weight: bold;fill: #5E72A6; font-family: "DejaVu Sans";' textLength='63.42px' lengthAdjust='spacingAndGlyphs'>data security</text>
+<text x='915.01' y='311.27' text-anchor='middle' style='font-size: 8.54px; font-weight: bold;fill: #1D829D; font-family: "DejaVu Sans";' textLength='23.16px' lengthAdjust='spacingAndGlyphs'>ddos</text>
+<text x='882.87' y='247.29' text-anchor='middle' style='font-size: 8.54px; font-weight: bold;fill: #173B62; font-family: "DejaVu Sans";' textLength='100.08px' lengthAdjust='spacingAndGlyphs'>deep neural network</text>
+<text x='114.64' y='268.54' text-anchor='middle' style='font-size: 8.54px; font-weight: bold;fill: #2BA06D; font-family: "DejaVu Sans";' textLength='44.47px' lengthAdjust='spacingAndGlyphs'>deepfake</text>
+<text x='847.83' y='459.43' text-anchor='middle' style='font-size: 8.54px; font-weight: bold;fill: #AF639D; font-family: "DejaVu Sans";' textLength='85.77px' lengthAdjust='spacingAndGlyphs'>deepfake defense</text>
+<text x='705.38' y='192.47' text-anchor='middle' style='font-size: 8.54px; font-weight: bold;fill: #B58326; font-family: "DejaVu Sans";' textLength='91.59px' lengthAdjust='spacingAndGlyphs'>differential privacy</text>
+<text x='338.81' y='185.74' text-anchor='middle' style='font-size: 8.54px; font-weight: bold;fill: #5E72A6; font-family: "DejaVu Sans";' textLength='89.23px' lengthAdjust='spacingAndGlyphs'>ensemble learning</text>
+<text x='83.69' y='430.69' text-anchor='middle' style='font-size: 8.54px; font-weight: bold;fill: #1D829D; font-family: "DejaVu Sans";' textLength='116.11px' lengthAdjust='spacingAndGlyphs'>false data injection (fdi)</text>
+<text x='669.30' y='509.48' text-anchor='middle' style='font-size: 8.54px; font-weight: bold;fill: #173B62; font-family: "DejaVu Sans";' textLength='107.23px' lengthAdjust='spacingAndGlyphs'>federated learning (fl)</text>
+<text x='932.22' y='294.64' text-anchor='middle' style='font-size: 8.54px; font-weight: bold;fill: #2BA06D; font-family: "DejaVu Sans";' textLength='52.92px' lengthAdjust='spacingAndGlyphs'>generators</text>
+<text x='90.44' y='294.74' text-anchor='middle' style='font-size: 8.54px; font-weight: bold;fill: #AF639D; font-family: "DejaVu Sans";' textLength='14.11px' lengthAdjust='spacingAndGlyphs'>ids</text>
+<text x='846.73' y='227.09' text-anchor='middle' style='font-size: 8.54px; font-weight: bold;fill: #B58326; font-family: "DejaVu Sans";' textLength='87.38px' lengthAdjust='spacingAndGlyphs'>image recognition</text>
+</g>
+<g clip-path='url(#cpMC4wMHwxMDA4LjAwfDAuMDB8NjQ4LjAw)'>
+<text x='24.91' y='62.31' style='font-size: 12.00px;fill: #526574; font-family: "DejaVu Sans";' textLength='317.50px' lengthAdjust='spacingAndGlyphs'>65 términos · Tamaño según número de documentos</text>
+<text x='24.91' y='39.22' style='font-size: 21.00px; font-weight: bold;fill: #192B3A; font-family: "DejaVu Sans";' textLength='277.44px' lengthAdjust='spacingAndGlyphs'>Nube de palabras clave</text>
+<text x='24.91' y='625.99' style='font-size: 10.00px;fill: #647581; font-family: "DejaVu Sans";' textLength='388.55px' lengthAdjust='spacingAndGlyphs'>Cadena P · Palabras clave de autor · 134 de 637 documentos con este campo</text>
+</g>
+</g>
+</svg>

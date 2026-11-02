@@ -1,0 +1,55 @@
+IEEE export2026.10.25-19.34.54IEEE.csv 44 registros
+IEEE export2026.10.25-19.35.22IEEE.csv 52 registros
+Scopus export_2026-10-25TSCOPUS.csv 157 registros
+
+Converting your scopus collection into a bibliographic dataframe
+
+Done!
+
+
+Generating affiliation field tag AU_UN from C1:  Done!
+
+Springer SearchResults(1)SPRINGER.csv 455 registros
+WoS savedrecs(1 wos).xls 30 registros
+ [1] "Publication Type"           "Authors"                   
+ [3] "Book Authors"               "Book Editors"              
+ [5] "Book Group Authors"         "Author Full Names"         
+ [7] "Book Author Full Names"     "Group Authors"             
+ [9] "Article Title"              "Source Title"              
+[11] "Book Series Title"          "Book Series Subtitle"      
+[13] "Language"                   "Document Type"             
+[15] "Conference Title"           "Conference Date"           
+[17] "Conference Location"        "Conference Sponsor"        
+[19] "Conference Host"            "Author Keywords"           
+[21] "Keywords Plus"              "Abstract"                  
+[23] "Addresses"                  "Affiliations"              
+[25] "Reprint Addresses"          "Email Addresses"           
+[27] "Researcher Ids"             "ORCIDs"                    
+[29] "Funding Orgs"               "Funding Name Preferred"    
+[31] "Funding Text"               "Cited References"          
+[33] "Cited Reference Count"      "Times Cited, WoS Core"     
+[35] "Times Cited, All Databases" "180 Day Usage Count"       
+[37] "Since 2013 Usage Count"     "Publisher"                 
+[39] "Publisher City"             "Publisher Address"         
+[41] "ISSN"                       "eISSN"                     
+[43] "ISBN"                       "Journal Abbreviation"      
+[45] "Journal ISO Abbreviation"   "Publication Date"          
+[47] "Publication Year"           "Volume"                    
+[49] "Issue"                      "Part Number"               
+[51] "Supplement"                 "Special Issue"             
+[53] "Meeting Abstract"           "Start Page"                
+[55] "End Page"                   "Article Number"            
+[57] "DOI"                        "DOI Link"                  
+[59] "Book DOI"                   "Early Access Date"         
+[61] "Number of Pages"            "WoS Categories"            
+[63] "Web of Science Index"       "Research Areas"            
+[65] "IDS Number"                 "Pubmed Id"                 
+[67] "Open Access Designations"   "Highly Cited Status"       
+[69] "Hot Paper Status"           "Date of Export"            
+[71] "UT (Unique WOS ID)"         "Web of Science Record"     
+                                               Authors
+1 Meng, RH; Yi, CY; Yu, Y; Yang, SY; Shen, BQ; Kot, AC
+                                                             Author Full Names
+1 Meng, Ruohan; Yi, Chenyu; Yu, Yi; Yang, Siyuan; Shen, Bingquan; Kot, Alex C.
+                                         Article Title Cited References
+1 Semantic Deep Hiding for Robust Unlearnable Examples               NA

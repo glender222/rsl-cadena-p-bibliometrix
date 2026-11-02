@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='1152.00pt' height='792.00pt' viewBox='0 0 1152.00 792.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHwxMTUyLjAwfDAuMDB8NzkyLjAw'>
+    <rect x='0.00' y='0.00' width='1152.00' height='792.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHwxMTUyLjAwfDAuMDB8NzkyLjAw)'>
+<rect x='0.00' y='0.00' width='1152.00' height='792.00' style='stroke-width: 1.36; stroke: none; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpNTguOTR8MTEyMi4xMXw4Mi43NHw2NTcuNDM='>
+    <rect x='58.94' y='82.74' width='1063.17' height='574.69' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNTguOTR8MTEyMi4xMXw4Mi43NHw2NTcuNDM=)'>
+<polyline points='58.94,549.61 1122.11,549.61 ' style='stroke-width: 0.64; stroke: #E9EEF1; stroke-linecap: butt;' />
+<polyline points='58.94,429.80 1122.11,429.80 ' style='stroke-width: 0.64; stroke: #E9EEF1; stroke-linecap: butt;' />
+<polyline points='58.94,309.98 1122.11,309.98 ' style='stroke-width: 0.64; stroke: #E9EEF1; stroke-linecap: butt;' />
+<polyline points='58.94,190.16 1122.11,190.16 ' style='stroke-width: 0.64; stroke: #E9EEF1; stroke-linecap: butt;' />
+<polyline points='234.26,657.43 234.26,82.74 ' style='stroke-width: 0.64; stroke: #E9EEF1; stroke-linecap: butt;' />
+<polyline points='431.47,657.43 431.47,82.74 ' style='stroke-width: 0.64; stroke: #E9EEF1; stroke-linecap: butt;' />
+<polyline points='628.68,657.43 628.68,82.74 ' style='stroke-width: 0.64; stroke: #E9EEF1; stroke-linecap: butt;' />
+<polyline points='825.89,657.43 825.89,82.74 ' style='stroke-width: 0.64; stroke: #E9EEF1; stroke-linecap: butt;' />
+<polyline points='1023.10,657.43 1023.10,82.74 ' style='stroke-width: 0.64; stroke: #E9EEF1; stroke-linecap: butt;' />
+<line x1='58.94' y1='309.98' x2='1122.11' y2='309.98' style='stroke-width: 0.85; stroke: #AAB5BD; stroke-dasharray: 4.55,4.55; stroke-linecap: butt;' />
+<line x1='825.89' y1='657.43' x2='825.89' y2='82.74' style='stroke-width: 0.85; stroke: #AAB5BD; stroke-dasharray: 4.55,4.55; stroke-linecap: butt;' />
+<polygon points='981.40,435.99 954.00,581.37 670.59,450.11 652.42,312.17 647.78,198.12 911.71,158.80 916.04,167.14 951.75,252.15 ' style='stroke-width: 1.28; stroke: #2596BE; stroke-linecap: butt; fill: #2596BE; fill-opacity: 0.12;' />
+<polygon points='209.59,353.18 199.65,350.11 258.64,331.21 ' style='stroke-width: 1.28; stroke: #DE6367; stroke-linecap: butt; fill: #DE6367; fill-opacity: 0.12;' />
+<circle cx='680.20' cy='299.80' r='3.23' style='stroke-width: 0.90; stroke: #2596BE; fill: #2596BE;' />
+<circle cx='652.42' cy='312.17' r='3.23' style='stroke-width: 0.90; stroke: #2596BE; fill: #2596BE;' />
+<circle cx='788.58' cy='191.48' r='3.23' style='stroke-width: 0.90; stroke: #2596BE; fill: #2596BE;' />
+<circle cx='951.75' cy='252.15' r='3.23' style='stroke-width: 0.90; stroke: #2596BE; fill: #2596BE;' />
+<circle cx='951.84' cy='541.40' r='3.23' style='stroke-width: 0.90; stroke: #2596BE; fill: #2596BE;' />
+<circle cx='911.71' cy='158.80' r='3.23' style='stroke-width: 0.90; stroke: #2596BE; fill: #2596BE;' />
+<circle cx='209.59' cy='353.18' r='3.23' style='stroke-width: 0.90; stroke: #DE6367; fill: #DE6367;' />
+<circle cx='952.93' cy='567.82' r='3.23' style='stroke-width: 0.90; stroke: #2596BE; fill: #2596BE;' />
+<circle cx='237.12' cy='338.67' r='3.23' style='stroke-width: 0.90; stroke: #DE6367; fill: #DE6367;' />
+<circle cx='668.12' cy='317.88' r='3.23' style='stroke-width: 0.90; stroke: #2596BE; fill: #2596BE;' />
+<circle cx='258.64' cy='331.21' r='3.23' style='stroke-width: 0.90; stroke: #DE6367; fill: #DE6367;' />
+<circle cx='916.04' cy='167.14' r='3.23' style='stroke-width: 0.90; stroke: #2596BE; fill: #2596BE;' />
+<circle cx='910.15' cy='370.15' r='3.23' style='stroke-width: 0.90; stroke: #2596BE; fill: #2596BE;' />
+<circle cx='647.78' cy='198.12' r='3.23' style='stroke-width: 0.90; stroke: #2596BE; fill: #2596BE;' />
+<circle cx='900.90' cy='199.83' r='3.23' style='stroke-width: 0.90; stroke: #2596BE; fill: #2596BE;' />
+<circle cx='692.41' cy='265.76' r='3.23' style='stroke-width: 0.90; stroke: #2596BE; fill: #2596BE;' />
+<circle cx='918.55' cy='264.01' r='3.23' style='stroke-width: 0.90; stroke: #2596BE; fill: #2596BE;' />
+<circle cx='199.65' cy='350.11' r='3.23' style='stroke-width: 0.90; stroke: #DE6367; fill: #DE6367;' />
+<circle cx='981.40' cy='435.99' r='3.23' style='stroke-width: 0.90; stroke: #2596BE; fill: #2596BE;' />
+<circle cx='670.59' cy='450.11' r='3.23' style='stroke-width: 0.90; stroke: #2596BE; fill: #2596BE;' />
+<circle cx='858.83' cy='381.68' r='3.23' style='stroke-width: 0.90; stroke: #2596BE; fill: #2596BE;' />
+<circle cx='952.58' cy='298.52' r='3.23' style='stroke-width: 0.90; stroke: #2596BE; fill: #2596BE;' />
+<circle cx='954.00' cy='581.37' r='3.23' style='stroke-width: 0.90; stroke: #2596BE; fill: #2596BE;' />
+<circle cx='897.89' cy='274.02' r='3.23' style='stroke-width: 0.90; stroke: #2596BE; fill: #2596BE;' />
+<line x1='694.74' y1='290.55' x2='684.74' y2='296.91' style='stroke-width: 1.07; stroke: #A4AFB8;' />
+<line x1='642.47' y1='312.89' x2='647.05' y2='312.56' style='stroke-width: 1.07; stroke: #A4AFB8;' />
+<line x1='780.12' y1='182.25' x2='784.94' y2='187.51' style='stroke-width: 1.07; stroke: #A4AFB8;' />
+<line x1='968.20' y1='242.94' x2='956.45' y2='249.52' style='stroke-width: 1.07; stroke: #A4AFB8;' />
+<line x1='966.39' y1='532.15' x2='956.38' y2='538.51' style='stroke-width: 1.07; stroke: #A4AFB8;' />
+<line x1='897.20' y1='149.58' x2='907.16' y2='155.91' style='stroke-width: 1.07; stroke: #A4AFB8;' />
+<line x1='202.41' y1='366.09' x2='206.97' y2='357.88' style='stroke-width: 1.07; stroke: #A4AFB8;' />
+<line x1='942.99' y1='558.43' x2='949.02' y2='564.12' style='stroke-width: 1.07; stroke: #A4AFB8;' />
+<line x1='251.60' y1='347.87' x2='241.67' y2='341.56' style='stroke-width: 1.07; stroke: #A4AFB8;' />
+<line x1='683.31' y1='327.14' x2='672.72' y2='320.69' style='stroke-width: 1.07; stroke: #A4AFB8;' />
+<line x1='273.18' y1='321.97' x2='263.19' y2='328.32' style='stroke-width: 1.07; stroke: #A4AFB8;' />
+<line x1='930.54' y1='176.35' x2='920.59' y2='170.03' style='stroke-width: 1.07; stroke: #A4AFB8;' />
+<line x1='924.63' y1='360.96' x2='914.70' y2='367.26' style='stroke-width: 1.07; stroke: #A4AFB8;' />
+<line x1='662.33' y1='188.87' x2='652.32' y2='195.23' style='stroke-width: 1.07; stroke: #A4AFB8;' />
+<line x1='886.37' y1='209.07' x2='896.35' y2='202.72' style='stroke-width: 1.07; stroke: #A4AFB8;' />
+<line x1='677.90' y1='256.55' x2='687.87' y2='262.87' style='stroke-width: 1.07; stroke: #A4AFB8;' />
+<line x1='902.43' y1='254.81' x2='913.87' y2='261.34' style='stroke-width: 1.07; stroke: #A4AFB8;' />
+<line x1='189.66' y1='338.33' x2='196.17' y2='346.00' style='stroke-width: 1.07; stroke: #A4AFB8;' />
+<line x1='995.92' y1='426.76' x2='985.94' y2='433.10' style='stroke-width: 1.07; stroke: #A4AFB8;' />
+<line x1='685.07' y1='440.91' x2='675.13' y2='447.22' style='stroke-width: 1.07; stroke: #A4AFB8;' />
+<line x1='844.35' y1='390.87' x2='854.29' y2='384.56' style='stroke-width: 1.07; stroke: #A4AFB8;' />
+<line x1='967.07' y1='307.73' x2='957.13' y2='301.41' style='stroke-width: 1.07; stroke: #A4AFB8;' />
+<line x1='968.48' y1='590.57' x2='958.54' y2='584.25' style='stroke-width: 1.07; stroke: #A4AFB8;' />
+<line x1='882.62' y1='283.21' x2='893.28' y2='276.80' style='stroke-width: 1.07; stroke: #A4AFB8;' />
+<text x='707.83' y='288.75' text-anchor='middle' style='font-size: 11.38px;fill: #2596BE; font-family: "Liberation Sans";' textLength='111.31px' lengthAdjust='spacingAndGlyphs'>unlearnable examples</text>
+<text x='596.10' y='316.81' text-anchor='middle' style='font-size: 11.38px;fill: #2596BE; font-family: "Liberation Sans";' textLength='89.14px' lengthAdjust='spacingAndGlyphs'>privacy protection</text>
+<text x='778.83' y='180.45' text-anchor='middle' style='font-size: 11.38px;fill: #2596BE; font-family: "Liberation Sans";' textLength='74.02px' lengthAdjust='spacingAndGlyphs'>data poisoning</text>
+<text x='1015.67' y='241.14' text-anchor='middle' style='font-size: 11.38px;fill: #2596BE; font-family: "Liberation Sans";' textLength='145.44px' lengthAdjust='spacingAndGlyphs'>adversarial machine learning</text>
+<text x='979.50' y='530.35' text-anchor='middle' style='font-size: 11.38px;fill: #2596BE; font-family: "Liberation Sans";' textLength='82.00px' lengthAdjust='spacingAndGlyphs'>diffusion models</text>
+<text x='884.08' y='147.78' text-anchor='middle' style='font-size: 11.38px;fill: #2596BE; font-family: "Liberation Sans";' textLength='86.64px' lengthAdjust='spacingAndGlyphs'>machine learning</text>
+<text x='181.95' y='372.01' text-anchor='middle' style='font-size: 11.38px;fill: #DE6367; font-family: "Liberation Sans";' textLength='37.31px' lengthAdjust='spacingAndGlyphs'>training</text>
+<text x='887.45' y='560.19' text-anchor='middle' style='font-size: 11.38px;fill: #2596BE; font-family: "Liberation Sans";' textLength='107.48px' lengthAdjust='spacingAndGlyphs'>adversarial examples</text>
+<text x='264.69' y='357.50' text-anchor='middle' style='font-size: 11.38px;fill: #DE6367; font-family: "Liberation Sans";' textLength='61.97px' lengthAdjust='spacingAndGlyphs'>data models</text>
+<text x='701.00' y='336.77' text-anchor='middle' style='font-size: 11.38px;fill: #2596BE; font-family: "Liberation Sans";' textLength='80.31px' lengthAdjust='spacingAndGlyphs'>face recognition</text>
+<text x='286.27' y='320.17' text-anchor='middle' style='font-size: 11.38px;fill: #DE6367; font-family: "Liberation Sans";' textLength='107.48px' lengthAdjust='spacingAndGlyphs'>perturbation methods</text>
+<text x='943.63' y='185.98' text-anchor='middle' style='font-size: 11.38px;fill: #2596BE; font-family: "Liberation Sans";' textLength='82.22px' lengthAdjust='spacingAndGlyphs'>poisoning attack</text>
+<text x='937.78' y='359.16' text-anchor='middle' style='font-size: 11.38px;fill: #2596BE; font-family: "Liberation Sans";' textLength='119.50px' lengthAdjust='spacingAndGlyphs'>adversarial perturbation</text>
+<text x='675.44' y='187.07' text-anchor='middle' style='font-size: 11.38px;fill: #2596BE; font-family: "Liberation Sans";' textLength='92.33px' lengthAdjust='spacingAndGlyphs'>anomaly detection</text>
+<text x='873.29' y='218.69' text-anchor='middle' style='font-size: 11.38px;fill: #2596BE; font-family: "Liberation Sans";' textLength='98.64px' lengthAdjust='spacingAndGlyphs'>contrastive learning</text>
+<text x='664.74' y='254.75' text-anchor='middle' style='font-size: 11.38px;fill: #2596BE; font-family: "Liberation Sans";' textLength='68.95px' lengthAdjust='spacingAndGlyphs'>deep learning</text>
+<text x='868.43' y='253.01' text-anchor='middle' style='font-size: 11.38px;fill: #2596BE; font-family: "Liberation Sans";' textLength='108.77px' lengthAdjust='spacingAndGlyphs'>deep neural networks</text>
+<text x='174.26' y='340.27' text-anchor='middle' style='font-size: 11.38px;fill: #DE6367; font-family: "Liberation Sans";' textLength='27.20px' lengthAdjust='spacingAndGlyphs'>noise</text>
+<text x='1008.98' y='424.96' text-anchor='middle' style='font-size: 11.38px;fill: #2596BE; font-family: "Liberation Sans";' textLength='91.69px' lengthAdjust='spacingAndGlyphs'>availability attacks</text>
+<text x='698.17' y='439.11' text-anchor='middle' style='font-size: 11.38px;fill: #2596BE; font-family: "Liberation Sans";' textLength='61.33px' lengthAdjust='spacingAndGlyphs'>data privacy</text>
+<text x='831.18' y='400.50' text-anchor='middle' style='font-size: 11.38px;fill: #2596BE; font-family: "Liberation Sans";' textLength='75.25px' lengthAdjust='spacingAndGlyphs'>data protection</text>
+<text x='980.18' y='317.35' text-anchor='middle' style='font-size: 11.38px;fill: #2596BE; font-family: "Liberation Sans";' textLength='87.91px' lengthAdjust='spacingAndGlyphs'>poisoning attacks</text>
+<text x='981.53' y='600.20' text-anchor='middle' style='font-size: 11.38px;fill: #2596BE; font-family: "Liberation Sans";' textLength='113.17px' lengthAdjust='spacingAndGlyphs'>protective perturbation</text>
+<text x='863.25' y='292.84' text-anchor='middle' style='font-size: 11.38px;fill: #2596BE; font-family: "Liberation Sans";' textLength='105.62px' lengthAdjust='spacingAndGlyphs'>unlearnable example</text>
+</g>
+<g clip-path='url(#cpMC4wMHwxMTUyLjAwfDAuMDB8NzkyLjAw)'>
+<text x='52.66' y='553.69' text-anchor='end' style='font-size: 11.20px;fill: #34495A; font-family: "DejaVu Sans";' textLength='11.16px' lengthAdjust='spacingAndGlyphs'>-2</text>
+<text x='52.66' y='433.88' text-anchor='end' style='font-size: 11.20px;fill: #34495A; font-family: "DejaVu Sans";' textLength='11.16px' lengthAdjust='spacingAndGlyphs'>-1</text>
+<text x='52.66' y='314.06' text-anchor='end' style='font-size: 11.20px;fill: #34495A; font-family: "DejaVu Sans";' textLength='7.12px' lengthAdjust='spacingAndGlyphs'>0</text>
+<text x='52.66' y='194.24' text-anchor='end' style='font-size: 11.20px;fill: #34495A; font-family: "DejaVu Sans";' textLength='7.12px' lengthAdjust='spacingAndGlyphs'>1</text>
+<text x='234.26' y='671.86' text-anchor='middle' style='font-size: 11.20px;fill: #34495A; font-family: "DejaVu Sans";' textLength='11.16px' lengthAdjust='spacingAndGlyphs'>-3</text>
+<text x='431.47' y='671.86' text-anchor='middle' style='font-size: 11.20px;fill: #34495A; font-family: "DejaVu Sans";' textLength='11.16px' lengthAdjust='spacingAndGlyphs'>-2</text>
+<text x='628.68' y='671.86' text-anchor='middle' style='font-size: 11.20px;fill: #34495A; font-family: "DejaVu Sans";' textLength='11.16px' lengthAdjust='spacingAndGlyphs'>-1</text>
+<text x='825.89' y='671.86' text-anchor='middle' style='font-size: 11.20px;fill: #34495A; font-family: "DejaVu Sans";' textLength='7.12px' lengthAdjust='spacingAndGlyphs'>0</text>
+<text x='1023.10' y='671.86' text-anchor='middle' style='font-size: 11.20px;fill: #34495A; font-family: "DejaVu Sans";' textLength='7.12px' lengthAdjust='spacingAndGlyphs'>1</text>
+<text x='590.52' y='687.88' text-anchor='middle' style='font-size: 14.00px;fill: #34495A; font-family: "DejaVu Sans";' textLength='291.55px' lengthAdjust='spacingAndGlyphs'>Dimensión 1 (79.1% de inercia corregida)</text>
+<text transform='translate(35.11,370.08) rotate(-90)' text-anchor='middle' style='font-size: 14.00px;fill: #34495A; font-family: "DejaVu Sans";' textLength='282.64px' lengthAdjust='spacingAndGlyphs'>Dimensión 2 (6.6% de inercia corregida)</text>
+<text x='488.45' y='725.45' style='font-size: 14.00px; font-weight: bold; font-family: "DejaVu Sans";' textLength='127.45px' lengthAdjust='spacingAndGlyphs'>Clúster factorial</text>
+<circle cx='631.51' cy='720.35' r='3.23' style='stroke-width: 0.90; stroke: #2596BE; fill: #2596BE;' />
+<text x='631.51' y='724.26' text-anchor='middle' style='font-size: 11.38px;fill: #2596BE; font-family: "Liberation Sans";' textLength='6.33px' lengthAdjust='spacingAndGlyphs'>a</text>
+<circle cx='669.87' cy='720.35' r='3.23' style='stroke-width: 0.90; stroke: #DE6367; fill: #DE6367;' />
+<text x='669.87' y='724.26' text-anchor='middle' style='font-size: 11.38px;fill: #DE6367; font-family: "Liberation Sans";' textLength='6.33px' lengthAdjust='spacingAndGlyphs'>a</text>
+<text x='647.13' y='724.43' style='font-size: 11.20px; font-family: "DejaVu Sans";' textLength='7.12px' lengthAdjust='spacingAndGlyphs'>1</text>
+<text x='685.48' y='724.43' style='font-size: 11.20px; font-family: "DejaVu Sans";' textLength='7.12px' lengthAdjust='spacingAndGlyphs'>2</text>
+<text x='58.94' y='62.31' style='font-size: 12.00px;fill: #526574; font-family: "DejaVu Sans";' textLength='538.17px' lengthAdjust='spacingAndGlyphs'>Análisis de correspondencias múltiples (MCA) · 24 términos presentes en ≥4 documentos</text>
+<text x='58.94' y='39.22' style='font-size: 21.00px; font-weight: bold;fill: #192B3A; font-family: "DejaVu Sans";' textLength='454.73px' lengthAdjust='spacingAndGlyphs'>Estructura conceptual · Mapa factorial</text>
+<text x='58.94' y='759.19' style='font-size: 10.00px;fill: #647581; font-family: "DejaVu Sans";' textLength='388.55px' lengthAdjust='spacingAndGlyphs'>Cadena P · Palabras clave de autor · 134 de 637 documentos con este campo</text>
+<text x='58.94' y='769.99' style='font-size: 10.00px;fill: #647581; font-family: "DejaVu Sans";' textLength='437.36px' lengthAdjust='spacingAndGlyphs'>Coordenadas calculadas por bibliometrix; las líneas guían hacia etiquetas desplazadas.</text>
+</g>
+</g>
+</svg>
