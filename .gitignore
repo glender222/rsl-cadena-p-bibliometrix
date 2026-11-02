@@ -8,4 +8,5 @@
 *.pem
 *.key
 .DS_Store
-articulo/build/
+articulo/build/*
+!articulo/build/manuscrito.pdf

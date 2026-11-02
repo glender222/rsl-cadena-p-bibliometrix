@@ -1,5 +1,5 @@
 % !TeX root = manuscrito.tex
-% Plantilla vacía del nuevo artículo. Compilar con ../compilar-articulo.sh.
+% Extracto del original: portada, resumen e introducción completa.
 \documentclass[pdflatex,sn-mathphys-num]{sn-jnl}
 
 \usepackage[utf8]{inputenc}
@@ -15,20 +15,101 @@
 \usepackage{textcomp}
 \usepackage{manyfoot}
 \usepackage{booktabs}
-\usepackage{array,longtable,tabularx}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{tabularx}
 \usepackage{tikz}
-\graphicspath{{figuras/}}
+\usetikzlibrary{arrows.meta,positioning,calc}
 
+%% Encabezados fijos de la clase, traducidos
+\AtBeginDocument{%
+  \renewcommand\refname{Referencias}%
+  \renewcommand\tablename{Tabla}%
+  \renewcommand\figurename{Figura}%
+  \renewcommand\appendixname{Apéndice}%
+  \renewcommand\abstractname{Resumen}%
+  \def\keywordname{Palabras clave}%
+}
+
+%% Columnas de párrafo: X ponderadas para tablas a todo el ancho
+\newcolumntype{Y}[1]{>{\hsize=#1\hsize\raggedright\arraybackslash}X}
+\newcolumntype{Z}[1]{>{\hsize=#1\hsize\centering\arraybackslash}X}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+%% Punto de corte sin guion, para DOI y cadenas largas
+\newcommand{\br}{\discretionary{}{}{}}
+
+\theoremstyle{thmstyleone}
+\newtheorem{theorem}{Teorema}
+\newtheorem{proposition}[theorem]{Proposición}
+\theoremstyle{thmstyletwo}
+\newtheorem{example}{Ejemplo}
+\newtheorem{remark}{Observación}
+\theoremstyle{thmstylethree}
+\newtheorem{definition}{Definición}
+
+\raggedbottom
+
+\usepackage{placeins}
+\graphicspath{{figuras/}}
 \begin{document}
 
-\title{Título del nuevo artículo}
-\author{\fnm{Nombre} \sur{Apellido}}
+\title[Robustez y reversibilidad de la perturbación proactiva]{Perturbaciones proactivas para impedir el entrenamiento no autorizado de modelos de visión por computador: una revisión sistemática de la literatura sobre su robustez frente a contramedidas adversarias}
+
+\author[1]{\fnm{Glender} \sur{Vargas}}
+\author[2]{\fnm{Franco} \sur{Aguilar}}
+\author[3]{\fnm{Rodrigo} \sur{Calli}}
+\author[4]{\fnm{DR Soria} \sur{Quijaite}}
+\affil[1]{\orgdiv{Escuela Profesional de Ingeniería de Sistemas},\orgname{Universidad Peruana Unión},\orgaddress{\city{Lima},\country{Perú}}}
+
+\abstract{\textbf{Contexto.} Las imágenes publicadas en internet se recolectan sin autorización para entrenar clasificadores y sistemas de reconocimiento facial. Frente a ello se han propuesto perturbaciones proactivas que el titular del dato aplica a sus propias imágenes para degradar su utilidad como material de entrenamiento. La eficacia que declaran quienes las proponen difiere de la que obtienen las evaluaciones independientes. \textbf{Objetivo.} Determinar qué robustez y qué reversibilidad reportan los estudios primarios publicados entre 2020 y 2026 para estas perturbaciones frente a las contramedidas documentadas, y bajo qué modelos de amenaza se han evaluado. \textbf{Método.} Revisión sistemática conforme a PRISMA 2020 y a las guías de Kitchenham y Charters, con una única ecuación de búsqueda de cuatro bloques PICO ejecutada el 14 de septiembre de 2026 en Scopus, Web of Science, IEEE Xplore y SpringerLink, y una vía complementaria de otros métodos. La selección aplicó ocho criterios de inclusión y once de exclusión, con doble revisión independiente, y una rúbrica de calidad de nueve preguntas con umbral de 5,5 sobre 9 y regla de piso sobre el modelo de amenaza. \textbf{Estado.} Se identificaron 794 registros, se cribaron 389 y se incluyeron 39 estudios; la concordancia del cribado fue $\kappa = 0{,}928$. Este manuscrito documenta la introducción, el marco conceptual, el protocolo y el flujo de selección cerrado. La síntesis por preguntas de investigación y la discusión se reportarán en una versión posterior.}
+
+\keywords{ejemplos no aprendibles, perturbación proactiva, envenenamiento de disponibilidad, entrenamiento no autorizado, reconocimiento facial, robustez, revisión sistemática}
+
 \maketitle
 
-\section{Introducción}
-% Redactar aquí el nuevo artículo.
+\section{Introducción}\label{sec:intro}
 
-% Activar cuando se agreguen las primeras citas del nuevo artículo:
-% \bibliography{referencias}
+La recolecciónnnn masiva de imágenes publicadas en internet sostiene el entrenamiento de clasificadores visuales y de sistemas de reconocimiento facial sin que el titular del dato intervenga en esa decisión. Frente a este escenario ha surgido una línea de trabajo que no busca restringir el acceso al dato sino alterarlo: añadir a la imagen una perturbación imperceptible que degrade su utilidad para quien la explote sin autorización. El mecanismo original, los ejemplos no aprendibles (\emph{unlearnable examples}), introduce un ruido minimizador de error que genera un atajo estadístico correlacionado con la etiqueta, de modo que el modelo aprende el ruido en lugar del contenido y falla ante datos limpios \cite{huang2021unlearnable}. En paralelo, el linaje del ocultamiento facial persigue el mismo objetivo sobre galerías de identidades \cite{shan2020fawkes}. Ambas líneas comparten la premisa de que la protección se ejerce sobre el dato y antes de su recolección; difieren en el mecanismo de generación, en la tarea del adversario y en la etapa del sistema donde se mide el efecto.
+
+La premisa que sostiene esta línea es empíricamente disputada. La evidencia recogida en esta revisión indica que operaciones de bajo costo, muchas de ellas ajenas a cualquier intención ofensiva, revierten buena parte de la protección declarada. Hapuarachchi y Xiong aplicaron aprendizaje por conjuntos con transformaciones no lineales sobre datos protegidos por doce enfoques distintos y obtuvieron más del 89\,\% de exactitud media, elevando el caso de One-Pixel Shortcut del 22,16\,\% al 90,38\,\% \cite{hapuarachchi2025advancing,wu2023onepixel}. Gong et al. documentan que el aumento de datos, procedimiento habitual de preprocesamiento, eleva la exactitud sobre datos protegidos por ruido minimizador de error del 21,38\,\% al 66,14\,\% \cite{gong2026armor}. Dolatabadi et al. recuperan del 7,86\,\% al 91,57\,\% en CIFAR-10 mediante purificación por difusión \cite{dolatabadi2024devil}. Existen, sin embargo, contraejemplos parciales: CUDA se mantiene en el 8,96\,\% bajo entrenamiento estándar en ImageNet-100 y resiste suavizado, aumentos y ajuste fino \cite{sadasivan2023cuda}. El cuadro resultante es el de una carrera armamentista abierta, no el de un veredicto cerrado en ninguno de los dos sentidos.
+
+Interpretar esta divergencia exige atender a una variable que los estudios declaran de forma desigual: el modelo de amenaza. Una cifra aislada de exactitud no es interpretable sin saber qué datos protegidos entraron al entrenamiento, qué conocimiento y qué recursos tenía el recolector, y contra qué condición se comparó. Una contramedida evaluada por quien propone la protección y otra diseñada por quien conoce su mecanismo no miden lo mismo, aunque ambas se reporten como exactitud sobre el mismo conjunto de datos. La hipótesis de trabajo de esta revisión es que buena parte de la divergencia entre resultados se explica por el modelo de amenaza asumido; se examina mediante la síntesis y no se presenta como hallazgo establecido.
+
+El término reversibilidad exige, además, una distinción que la literatura no siempre hace explícita. La recuperación del dato original por parte de un usuario autorizado, mediante una llave o un mecanismo que el titular controla, no equivale a que un recolector no autorizado elimine la protección \cite{wang2026reversible}. Las dos acepciones coexisten en el corpus y se registran por separado: esta revisión reserva \emph{reversibilidad} para la reversión por parte del adversario y \emph{reversibilidad autorizada} para la primera. De forma análoga, perturbar una consulta para evadir un reconocedor ya entrenado no demuestra protección del conjunto con el que el adversario aprende; la revisión exige evidencia de participación de los datos protegidos en el entrenamiento discriminativo.
+
+La literatura de síntesis disponible no cubre este objeto. De las nueve revisiones identificadas como relacionadas (Tabla~\ref{tab:revisiones}), tres delimitan su alcance al adversario generativo, tres son preimpresiones no arbitradas, una no cubre el constructo según su índice y de otra no se ha podido consultar el resumen. La referencia más próxima, el SoK de Wenger et al., sí aborda el adversario discriminativo, pero se restringe al reconocimiento facial, es narrativo y precede a la mayor parte de la evidencia de reversibilidad publicada entre 2023 y 2026 \cite{wenger2023sok}. No se ha identificado una revisión que reúna simultáneamente tres condiciones: (i) un protocolo sistemático conforme a PRISMA 2020 y a las guías de Kitchenham y Charters, con criterios explícitos y evaluación de calidad; (ii) la cobertura conjunta de las dos subáreas del adversario discriminativo, clasificación y reconocimiento facial, bajo un mismo marco; y (iii) la persistencia frente a contramedidas como pregunta principal, explicada por el modelo de amenaza.
+
+La segunda condición no es una preferencia de alcance. El corpus incluido reparte 25 estudios de clasificación de imágenes frente a 6 de reconocimiento facial, un desequilibrio que hace de la transferencia entre ambas subáreas una pregunta abierta y no un supuesto: RQ7 la plantea de forma explícita.\footnote{Un estudio recuperado por la búsqueda sostiene en su resumen que las técnicas de clase acotada desarrolladas para clasificación no son aplicables al reconocimiento facial de conjunto abierto, porque en este las identidades de entrenamiento y prueba son disjuntas y el modelo aprende geometría de \emph{embeddings} en lugar de fronteras de clase \cite{paik2026toward}. Su texto completo no se recuperó (Sección~\ref{sec:seleccion}), de modo que la afirmación se registra como declarada por el resumen y no como evidencia verificada por el equipo.}
+
+La pregunta principal de la revisión es: ¿qué robustez y reversibilidad reportan los estudios primarios para las estrategias y algoritmos de perturbación proactiva frente a las contramedidas adversarias documentadas en el entrenamiento no autorizado de modelos discriminativos, y bajo qué modelos de amenaza se han evaluado? El verbo que la gobierna es \emph{reportan}: la revisión sintetiza lo que la literatura mide y no realiza mediciones propias.
+
+Este manuscrito documenta el marco conceptual, el protocolo y el flujo de selección de la revisión. La Sección~\ref{sec:antecedentes} fija las definiciones operativas y la escala de modelos de amenaza; la Sección~\ref{sec:metodo} describe el protocolo completo, desde la ecuación de búsqueda hasta la síntesis prevista; la Sección~\ref{sec:seleccion} reporta el flujo PRISMA cerrado y la caracterización del corpus resultante. La síntesis por preguntas de investigación y la discusión se reportarán en una versión posterior.
+
+\begin{table}[h]
+\centering
+\caption{Revisiones de síntesis identificadas como relacionadas y estado de la comprobación realizada sobre cada una. La columna «Amenaza» indica en qué medida cada revisión compromete el vacío declarado.}\label{tab:revisiones}
+\footnotesize
+\begin{tabularx}{\textwidth}{@{}Y{0.85}Y{0.6}Y{1.10}Y{1.45}@{}}
+\toprule
+Revisión & Adversario & DOI o ID & Estado de la comprobación y amenaza \\
+\midrule
+Deng et al. (2025), ACM CSUR & Generativo & \texttt{\scriptsize 10.\br 1145/\br 3770916} & Texto completo consultado. La taxonomía «Attacked Module» solo lista módulos generativos. Amenaza: ninguna \\
+Nguyen-Le et al. (2025), ACM CSUR 58(5) & Generativo & \texttt{\scriptsize 10.\br 1145/\br 3771296} & Resumen y $\sim$40 referencias; no aparecen Fawkes, LowKey ni Huang et al. (2021). Texto completo no consultado. Amenaza: baja \\
+Bui et al. (2026), CVIU 271 & Generativo & \texttt{\scriptsize 10.\br 1016/\br j.\br cviu.\br 2026.\br 104867} & Solo el título; el resumen no resultó accesible. No verificable con la evidencia disponible. Amenaza: baja \\
+Wenger et al. (2023), IEEE S\&P & Discriminativo facial & \texttt{\scriptsize 10.\br 1109/\br SP46215.\br 2023.\br 10179445} & Texto completo consultado. SoK narrativo de la mitad facial, anterior a la evidencia 2023--2026. Amenaza: media-alta \\
+Wen et al. (2026), ACM CSUR & Ambos & \texttt{\scriptsize 10.\br 1145/\br 3818678} & Índice consultado; no cubre Fawkes ni ejemplos no aprendibles. Amenaza: baja \\
+Li et al. (2025), preimpresión & Clasificación & arXiv:2503.23536 & Trata la robustez como una columna sí/no de una tabla, no como síntesis. No arbitrada. Amenaza: media \\
+Zhang et al. (2026), preimpresión & Ambos & arXiv:2608.04314 & Dos de sus cinco comunidades coinciden con el objeto. No arbitrada. Amenaza: media \\
+Chen et al. (2025), preimpresión & Facial & arXiv:2501.08665 & Examina Fawkes, OPOM, TIP-IM, REM y ruido minimizador de error. No arbitrada. Amenaza: baja \\
+Autoría por confirmar (2026), IJCV & Por determinar & \texttt{\scriptsize 10.\br 1007/\br s11263-025-02631-z} & Detectada por la ecuación el 2026-09-08. Resumen no consultado. No verificable con la evidencia disponible \\
+\botrule
+\end{tabularx}
+\par\vspace{3pt}\scriptsize\raggedright No se atribuye cobertura ni ausencia de cobertura a partir del título: la columna de estado declara con qué material se evaluó cada revisión. Las preimpresiones se registran como literatura gris de contexto y no como estudios incluidos.\par
+\end{table}
+
+
+\FloatBarrier
+\bibliography{referencias}
 
 \end{document}

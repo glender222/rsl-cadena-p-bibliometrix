@@ -52,7 +52,9 @@ Se requiere R 4.5 o compatible, fuentes DejaVu Sans y las bibliotecas gráficas 
 
 ## Redactar el nuevo artículo con LaTeX
 
-El entorno de redacción usa Docker y LaTeX Workshop, con la misma clase editorial `sn-jnl` y el estilo numérico `sn-mathphys-num` del entorno anterior. Se copió únicamente la configuración técnica: el manuscrito y la bibliografía empiezan vacíos, con marcadores de título y autor.
+El entorno de redacción usa Docker y LaTeX Workshop, con la misma clase editorial `sn-jnl` y el estilo numérico `sn-mathphys-num` del entorno anterior. Como punto de partida se copiaron de **Rslunlearnable** el título, autores, afiliación, resumen, palabras clave y la introducción completa, incluida su tabla. No se copiaron las secciones posteriores. La bibliografía contiene únicamente las 10 entradas originales citadas en el fragmento.
+
+[Abrir el artículo compilado (PDF)](articulo/build/manuscrito.pdf). La compilación funciona; las cuatro referencias internas a secciones posteriores aparecen pendientes de resolver porque esas secciones aún no se incluyeron. El texto y los recuentos del fragmento son los del artículo de origen y todavía no se han adaptado al nuevo manuscrito.
 
 1. Abrir la carpeta completa del repositorio en VS Code y tener Docker iniciado.
 2. Instalar la extensión recomendada **LaTeX Workshop** (`james-yu.latex-workshop`).
@@ -67,7 +69,7 @@ bash compilar-articulo.sh
 
 La imagen `rsl-latex:trixie` se reutiliza si existe; en otro equipo se construye automáticamente con `Dockerfile.latex`. No hace falta instalar LaTeX en el equipo. En Windows, ejecutar el script desde WSL con Docker Desktop integrado.
 
-Las nuevas referencias van en [articulo/referencias.bib](articulo/referencias.bib) y las figuras en `articulo/figuras/`. Los archivos temporales y el PDF de trabajo quedan excluidos de Git; el historial conserva las versiones del fuente. Los datos y gráficos bibliométricos del proyecto siguen disponibles como resultados separados.
+Las referencias van en [articulo/referencias.bib](articulo/referencias.bib) y las figuras en `articulo/figuras/`. Se comparte un único PDF actualizado en `articulo/build/manuscrito.pdf`; los archivos temporales de compilación quedan excluidos de Git. Los datos y gráficos bibliométricos del proyecto siguen disponibles como resultados separados.
 
 ## Scripts
 
