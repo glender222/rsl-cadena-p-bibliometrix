@@ -1,4 +1,9 @@
 {
+  "[latex]": {
+    "editor.wordWrap": "on",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
   "latex-workshop.latex.autoBuild.run": "onSave",
   "latex-workshop.latex.recipe.default": "Compilar artículo (Docker)",
   "latex-workshop.latex.outDir": "%DIR%/build",

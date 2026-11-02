@@ -61,6 +61,8 @@ El entorno de redacción usa Docker y LaTeX Workshop, con la misma clase editori
 3. Redactar en [articulo/manuscrito.tex](articulo/manuscrito.tex).
 4. Al guardar, VS Code ejecuta la compilación con Docker y actualiza **un único PDF** en `articulo/build/manuscrito.pdf`.
 
+También puedes compilar con **Ctrl+Shift+B**. La [guía de redacción](articulo/LEEME.md) indica dónde empezar la introducción y cómo gestionar citas y figuras.
+
 También se puede compilar desde la raíz del proyecto:
 
 ```bash
