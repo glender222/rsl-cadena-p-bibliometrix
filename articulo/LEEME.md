@@ -25,10 +25,19 @@ se consultan en `../resultados/graficos/` y sus métodos en
 
 ## Punto de partida para la introducción
 
-El texto actual es el fragmento importado de Rslunlearnable. Sus cifras,
-afirmaciones, tabla y referencias pertenecen a ese manuscrito; aún requieren
-revisión para este artículo. Los cuatro enlaces internos a secciones posteriores
-siguen pendientes y aparecen como `??` en el PDF.
+El texto actual contiene la portada, el resumen, las palabras clave y la
+introducción de `manuscrito_RSL_fuentes`, aportado por el equipo. Se conserva la
+bibliografía completa del archivo recibido para continuar la redacción; se
+imprimen únicamente las referencias citadas. No se importaron las secciones
+desde Antecedentes en adelante.
+
+Los apellidos y la afiliación se completaron con los datos de la versión anterior;
+también se recuperó la autoría de DR Soria Quijaite tal como figuraba allí. Se
+mantienen el orden de los tres autores y el correo de correspondencia del archivo
+recibido. La introducción remite a `tab:rq`, una tabla situada en
+Método en el documento de origen; ese enlace quedará pendiente hasta incorporar
+esa parte. Las cifras y afirmaciones se trasladaron sin recalcularlas ni
+validarlas contra la sábana, que no se incluyó en esta carpeta de fuentes.
 
 La redacción se desarrollará desde el contexto y el problema, pasando por los
 antecedentes y el vacío de investigación, hasta el objetivo y las preguntas de

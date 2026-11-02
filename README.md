@@ -52,9 +52,9 @@ Se requiere R 4.5 o compatible, fuentes DejaVu Sans y las bibliotecas gráficas 
 
 ## Redactar el nuevo artículo con LaTeX
 
-El entorno de redacción usa Docker y LaTeX Workshop, con la misma clase editorial `sn-jnl` y el estilo numérico `sn-mathphys-num` del entorno anterior. Como punto de partida se copiaron de **Rslunlearnable** el título, autores, afiliación, resumen, palabras clave y la introducción completa, incluida su tabla. No se copiaron las secciones posteriores. La bibliografía contiene únicamente las 10 entradas originales citadas en el fragmento.
+El entorno de redacción usa Docker y LaTeX Workshop, con la clase editorial `sn-jnl` y el estilo numérico `sn-mathphys-num`. El manuscrito editable contiene el título, los datos de autoría, la afiliación, el resumen, las palabras clave y la introducción de **manuscrito_RSL_fuentes**, aportado por el equipo. No se copiaron las secciones desde Antecedentes en adelante. Se conserva la bibliografía completa recibida; se imprimen únicamente las entradas citadas.
 
-[Abrir el artículo compilado (PDF)](articulo/build/manuscrito.pdf). La compilación funciona; las cuatro referencias internas a secciones posteriores aparecen pendientes de resolver porque esas secciones aún no se incluyeron. El texto y los recuentos del fragmento son los del artículo de origen y todavía no se han adaptado al nuevo manuscrito.
+El [PDF guardado en Git](articulo/build/manuscrito.pdf) corresponde a la versión anterior. El manuscrito actual se consulta en la vista previa del editor o se compila con el comando indicado abajo. Los apellidos y la afiliación se completaron con los datos de la versión anterior y se recuperó la autoría de DR Soria Quijaite. Sigue pendiente el enlace a la tabla de preguntas de investigación, situada en una sección todavía no importada. Las cifras se trasladaron sin recalcularlas.
 
 1. Abrir la carpeta completa del repositorio en VS Code y tener Docker iniciado.
 2. Instalar la extensión recomendada **LaTeX Workshop** (`james-yu.latex-workshop`).
