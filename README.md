@@ -52,9 +52,9 @@ Se requiere R 4.5 o compatible, fuentes DejaVu Sans y las bibliotecas gráficas 
 
 ## Redactar el nuevo artículo con LaTeX
 
-El entorno de redacción usa Docker y LaTeX Workshop, con la clase editorial `sn-jnl` y el estilo numérico `sn-mathphys-num`. El manuscrito editable contiene el título, los datos de autoría, la afiliación, el resumen, las palabras clave y la introducción de **manuscrito_RSL_fuentes**, aportado por el equipo. No se copiaron las secciones desde Antecedentes en adelante. Se conserva la bibliografía completa recibida; se imprimen únicamente las entradas citadas.
+El entorno de redacción usa Docker y LaTeX Workshop, con la clase editorial `sn-jnl` y el estilo numérico `sn-mathphys-num`. Se incorporó el manuscrito completo de **entrega_codex_RSL.zip**, aportado por el equipo: portada e introducción, antecedentes, método, resultados, discusión, amenazas a la validez, conclusiones, declaraciones y apéndice. Los archivos se organizan en `articulo/secciones/`, `articulo/tablas/` y `articulo/figuras/`, con 18 tablas, cinco figuras PDF y 69 referencias bibliográficas citadas.
 
-El [PDF guardado en Git](articulo/build/manuscrito.pdf) corresponde a la versión anterior. El manuscrito actual se consulta en la vista previa del editor o se compila con el comando indicado abajo. Los apellidos y la afiliación se completaron con los datos de la versión anterior y se recuperó la autoría de DR Soria Quijaite. Sigue pendiente el enlace a la tabla de preguntas de investigación, situada en una sección todavía no importada. Las cifras se trasladaron sin recalcularlas.
+El [PDF de trabajo](articulo/build/manuscrito.pdf) contiene el manuscrito completo de 35 páginas, compilado con Docker. El manuscrito también compiló correctamente en el editor integrado. Se conservaron los autores y la afiliación completos. El enlace a la tabla de preguntas de investigación ya tiene destino. Siguen pendientes los campos marcados con `\pend{...}`. Las cifras se trasladaron sin recalcularlas.
 
 1. Abrir la carpeta completa del repositorio en VS Code y tener Docker iniciado.
 2. Instalar la extensión recomendada **LaTeX Workshop** (`james-yu.latex-workshop`).

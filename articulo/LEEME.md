@@ -23,21 +23,29 @@ imágenes del artículo van en `figuras/`. Los gráficos bibliométricos existen
 se consultan en `../resultados/graficos/` y sus métodos en
 `../resultados/LEEME_RESULTADOS.md`.
 
-## Punto de partida para la introducción
+## Manuscrito completo
 
-El texto actual contiene la portada, el resumen, las palabras clave y la
-introducción de `manuscrito_RSL_fuentes`, aportado por el equipo. Se conserva la
-bibliografía completa del archivo recibido para continuar la redacción; se
-imprimen únicamente las referencias citadas. No se importaron las secciones
-desde Antecedentes en adelante.
+Se incorporó `entrega_codex_RSL.zip`, aportado por el equipo, conservando sus
+textos, cifras, tablas y figuras. El archivo principal mantiene el título, los
+autores completos, la afiliación, el resumen y la introducción. Incluye además:
 
-Los apellidos y la afiliación se completaron con los datos de la versión anterior;
-también se recuperó la autoría de DR Soria Quijaite tal como figuraba allí. Se
-mantienen el orden de los tres autores y el correo de correspondencia del archivo
-recibido. La introducción remite a `tab:rq`, una tabla situada en
-Método en el documento de origen; ese enlace quedará pendiente hasta incorporar
-esa parte. Las cifras y afirmaciones se trasladaron sin recalcularlas ni
-validarlas contra la sábana, que no se incluyó en esta carpeta de fuentes.
+- `secciones/01_cierre_introduccion.tex`: cierre de la introducción.
+- `secciones/02_antecedentes.tex`: antecedentes.
+- `secciones/03_metodo.tex`: método.
+- `secciones/04_resultados.tex`: resultados.
+- `secciones/05_discusion.tex`: discusión, amenazas a la validez y conclusiones.
+- `secciones/06_final.tex`: declaraciones y apéndice.
+
+Las 18 tablas están en `tablas/`; las cinco figuras PDF y la fuente del diagrama
+PRISMA están en `figuras/`. `referencias.bib` contiene las 69 entradas citadas.
+La tabla de preguntas de investigación ya está incluida y su enlace desde la
+introducción tiene destino. Las notas del paquete recibido se conservan en
+`INSTRUCCIONES_ENTREGA.md` como documentación de origen.
+
+Los campos marcados con `\pend{...}` son pendientes declarados por el equipo,
+incluidas las declaraciones finales y los datos del material suplementario.
+Las cifras y afirmaciones se trasladaron sin recalcularlas ni validarlas contra
+la sábana, que no está incluida en este ZIP.
 
 La redacción se desarrollará desde el contexto y el problema, pasando por los
 antecedentes y el vacío de investigación, hasta el objetivo y las preguntas de

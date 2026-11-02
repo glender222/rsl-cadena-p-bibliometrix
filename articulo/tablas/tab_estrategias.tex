@@ -1,0 +1,70 @@
+\begin{footnotesize}
+\begin{longtable}{@{}L{6.2cm}L{1.0cm}L{2.2cm}L{3.0cm}@{}}
+\caption{Estrategias de protección propuestas en los estudios incluidos}\label{tab:estrategias}\\
+\toprule
+Protección & Estudio & Modalidad & Tarea \\
+\midrule
+\endfirsthead
+\multicolumn{4}{@{}l}{\tablename~\thetable{} (continuación)}\\
+\toprule
+Protección & Estudio & Modalidad & Tarea \\
+\midrule
+\endhead
+\botrule
+\endfoot
+\multicolumn{4}{@{}l}{\textit{Optimización por muestra con un modelo sustituto (18 estudios; requiere un modelo sustituto)}}\\
+\quad Minimización del error (ejemplos no aprendibles) & \cite{S0014} & Imagen 2D & Clasificación \\
+\quad Minimización del error robusta al entrenamiento adversario & \cite{S0075} & Imagen 2D & Clasificación \\
+\quad Ruido minimizador del error estable & \cite{S0040} & Imagen 2D & Clasificación \\
+\quad Optimización min-max-min con sustituto entrenado adversarialmente & \cite{S0138} & Imagen 2D & Clasificación \\
+\quad Minimización del error adaptada a aumentos de datos & \cite{S0090} & Imagen 2D & Clasificación \\
+\quad ARMOR, con aumento sustituto y alineación de gradientes & \cite{S0095} & Imagen 2D & Clasificación \\
+\quad Ejemplos no aprendibles reversibles mediante información mutua y marca de agua & \cite{S0107} & Imagen 2D & Clasificación \\
+\quad Ejemplos no aprendibles y envenenamiento adversarial aumentados & \cite{S0027} & Imagen 2D & Clasificación \\
+\quad Minimización del error con colisión de rasgos & \cite{S0082} & Nube de puntos 3D & Clasificación \\
+\quad Envenenamiento contrastivo & \cite{S0112} & Imagen 2D & Clasificación \\
+\quad Minimización del error en varios pasos & \cite{S0124} & Imagen-texto & Recuperación imagen-texto \\
+\quad Minimización del error en varios pasos con refinamiento conjunto & \cite{S0143} & Imagen-texto & Recuperación imagen-texto \\
+\quad Perturbación con rasgos dominantes de otra clase & \cite{S0071} & Imagen 2D & Clasificación \\
+\quad Maximización del error de Bayes & \cite{S0023} & Imagen 2D & Clasificación \\
+\quad Ejemplos no generalizables con red autorizada & \cite{S0030} & Imagen 2D & Clasificación \\
+\quad Máscara de aprendibilidad personalizable & \cite{S0066} & Imagen 2D & Clasificación \\
+\quad Optimización en el espacio latente de un autocodificador de difusión & \cite{S0061} & Imagen 2D & Clasificación \\
+\quad Ejemplos no aprendibles transferibles & \cite{S0101} & Imagen 2D & Clasificación \\
+\addlinespace
+\multicolumn{4}{@{}l}{\textit{Generador aprendido (12 estudios; requiere entrenar un generador)}}\\
+\quad Agrupamientos no aprendibles sin etiquetas & \cite{S0003} & Imagen 2D & Clasificación \\
+\quad Agrupamientos no aprendibles con cómputo distribuido & \cite{S0154} & Imagen 2D & Clasificación \\
+\quad Generador para reconocimiento facial de conjunto abierto & \cite{S0020} & Imagen facial & Reconocimiento facial \\
+\quad Generador guiado por información lateral & \cite{S0038} & Imagen facial & Reconocimiento facial \\
+\quad Generador a partir de descripciones textuales & \cite{S0039} & Imagen-texto & Recuperación imagen-texto \\
+\quad Generador transferible entre dominios & \cite{S0056} & Imagen 2D & Clasificación \\
+\quad Generador universal por concepto mediante alineación multimodal & \cite{S0062} & Imagen 2D & Clasificación \\
+\quad Generador para aprendizaje multitarea & \cite{S0072} & Imagen 2D & Multitarea \\
+\quad Generador universal para segmentación & \cite{S0074} & Imagen 2D & Segmentación \\
+\quad Generador basado en teoría de juegos & \cite{S0088} & Imagen 2D & Clasificación \\
+\quad Generador temporal para seguimiento de objetos & \cite{S0151} & Vídeo & Seguimiento de objetos \\
+\quad Disrupción espectral entre cortes & \cite{S0202} & Volumen médico 3D & Segmentación \\
+\addlinespace
+\multicolumn{4}{@{}l}{\textit{Atajo sintético sin modelo sustituto (7 estudios; no requiere modelo)}}\\
+\quad Convolución con filtros aleatorios por clase & \cite{S0063} & Imagen 2D & Clasificación \\
+\quad Atajo de un único píxel & \cite{S0068} & Imagen 2D & Clasificación \\
+\quad Perturbaciones sintéticas separables por clase & \cite{S0137} & Imagen 2D & Clasificación \\
+\quad Convolución por clase combinada con cambio de un píxel & \cite{S0126} & Imagen 2D & Clasificación \\
+\quad Restauración imperfecta de filtros convolucionales & \cite{S0144} & Imagen 2D & Clasificación \\
+\quad Transformaciones geométricas por clase & \cite{S0148} & Nube de puntos 3D & Clasificación \\
+\quad Patrón único de Fourier asociado a la presencia de objetos & \cite{S0127} & Imagen 2D & Detección de objetos \\
+\addlinespace
+\multicolumn{4}{@{}l}{\textit{Ocultamiento en dominio transformado (3 estudios; requiere redes de ocultamiento)}}\\
+\quad Esteganografía en el biespectro del espacio k & \cite{S0032} & Imagen 2D & Clasificación \\
+\quad Esteganografía en el dominio de ondículas & \cite{S0041} & Imagen 2D & Clasificación \\
+\quad Ocultamiento semántico mediante redes invertibles & \cite{S0047} & Imagen 2D & Clasificación \\
+\addlinespace
+\multicolumn{4}{@{}l}{\textit{Camuflaje de representaciones faciales (2 estudios; requiere un extractor facial)}}\\
+\quad Camuflaje de rasgos faciales hacia otra identidad & \cite{S0060} & Imagen facial & Reconocimiento facial \\
+\quad Camuflaje de rasgos faciales con extractor propio & \cite{S0135} & Imagen facial & Reconocimiento facial \\
+\addlinespace
+\multicolumn{4}{@{}l}{\textit{Sustitución guiada por relevancia (1 estudio; requiere el clasificador objetivo)}}\\
+\quad Sustitución de regiones según la relevancia por capas & \cite{S0647} & Imagen 2D & Clasificación \\
+\end{longtable}
+\end{footnotesize}

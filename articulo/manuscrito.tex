@@ -1,5 +1,5 @@
 % !TeX root = manuscrito.tex
-% Portada, resumen e introducción importados de manuscrito_RSL_fuentes.
+% Manuscrito completo: las secciones se incluyen desde secciones/ y las tablas desde tablas/.
 \documentclass[pdflatex,sn-mathphys-num]{sn-jnl}
 
 \usepackage[utf8]{inputenc}
@@ -82,7 +82,16 @@ Las revisiones disponibles describen el campo, pero no cuantifican la recuperaci
 
 Esta revisión responde cuatro preguntas (Tabla~\ref{tab:rq}). Sus aportes son: (i) una caracterización de 64 estudios primarios según la estrategia de protección, la modalidad, las contramedidas y el modelo de adversario; (ii) una síntesis cuantitativa de 3070 comparaciones entre la condición protegida y la condición con contramedida, restringida a pares con comparabilidad sustentada y agregada por estudio para evitar que los estudios con más celdas dominen el resultado; y (iii) un diagnóstico de las referencias experimentales que hoy limitan la comparación entre estudios, con recomendaciones verificables para su reporte.
 
+\input{secciones/01_cierre_introduccion}
+
+\input{secciones/02_antecedentes}
+\input{secciones/03_metodo}
+\input{secciones/04_resultados}
+\input{secciones/05_discusion}
+
 \FloatBarrier
+\input{secciones/06_final}
+
 \bibliography{referencias}
 
 \end{document}

@@ -1,0 +1,39 @@
+%% ===================================================================
+\section{Antecedentes}\label{sec:antecedentes}
+
+\subsection{Perturbación proactiva y contramedidas}
+
+En esta revisión, una \emph{perturbación proactiva} es una modificación que el titular aplica a sus datos visuales antes de publicarlos, con el fin de degradar la utilidad de un modelo discriminativo entrenado o ajustado con ellos sin autorización. La literatura la denomina también ejemplo no aprendible, dato no explotable o ataque de disponibilidad. El concepto excluye dos fenómenos próximos: las perturbaciones que actúan solo durante la inferencia de un modelo ya entrenado y las protecciones dirigidas exclusivamente contra modelos generativos.
+
+Una \emph{contramedida} es cualquier procedimiento que el adversario aplica a los datos protegidos o a su propio entrenamiento para recuperar el rendimiento del modelo. Incluye las transformaciones y compresiones de la entrada, los aumentos de datos, el entrenamiento adversario, la purificación mediante modelos generativos, los cambios del paradigma de aprendizaje y la detección y descarte de las muestras protegidas. La \emph{recuperación autorizada} es un caso distinto: un actor legítimo dispone de información o recursos del titular para restituir la aprendibilidad del dato.
+
+\subsection{Condiciones de comparación y medidas de recuperación}\label{sec:condiciones}
+
+La evaluación de una contramedida requiere comparar el rendimiento de modelos entrenados bajo cuatro condiciones:
+\begin{itemize}
+\item con datos limpios bajo el régimen estándar;
+\item con datos protegidos sin la contramedida;
+\item con datos protegidos después de aplicar la contramedida;
+\item con datos limpios sometidos a la misma contramedida.
+\end{itemize}
+A partir de ellas se definen tres magnitudes, orientadas según la dirección de la métrica:
+\begin{itemize}
+\item la \emph{recuperación}, diferencia entre el rendimiento con contramedida y el rendimiento protegido sin ella;
+\item la \emph{brecha al entrenamiento limpio}, diferencia entre el rendimiento limpio y el obtenido con contramedida;
+\item la \emph{brecha al control con contramedida}, diferencia respecto del entrenamiento limpio sometido a la misma contramedida.
+\end{itemize}
+Cuando la métrica es la exactitud en porcentaje, las tres se expresan en puntos porcentuales (pp).
+
+Las magnitudes se interpretan en conjunto:
+\begin{itemize}
+\item Una recuperación alta con una brecha baja al entrenamiento limpio indica que la contramedida neutraliza la protección.
+\item Una brecha alta al entrenamiento limpio con una brecha baja al control indica que la pérdida remanente se debe a la propia contramedida y no a la protección.
+\end{itemize}
+
+\subsection{Revisiones relacionadas}
+
+Tres trabajos de síntesis abordan el tema desde perspectivas distintas (Tabla~\ref{tab:revisiones}). Li et al.~\cite{li2025survey} revisan los métodos de generación de datos no aprendibles, sus benchmarks, métricas y aplicaciones, y comparan los enfoques en términos de no aprendibilidad, imperceptibilidad, eficiencia y robustez. Zhang et al.~\cite{zhang2026sok} relacionan la no aprendibilidad con el desaprendizaje de máquinas y aportan una evaluación empírica propia. Cinà et al.~\cite{cina2023wild} sistematizan los ataques y defensas de envenenamiento del entrenamiento, dentro de los cuales la perturbación proactiva aparece como un caso de envenenamiento indiscriminado. Los dos primeros trabajos son preimpresiones.
+
+Ninguno de estos trabajos sigue un protocolo sistemático con criterios de calidad declarados ni cuantifica la recuperación del adversario frente a las protecciones. Esa síntesis cuantitativa, restringida a las comparaciones que pueden interpretarse, es el aporte de la presente revisión.
+
+\input{tablas/tab_revisiones}

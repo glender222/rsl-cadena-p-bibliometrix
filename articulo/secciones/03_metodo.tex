@@ -1,0 +1,97 @@
+%% ===================================================================
+\section{Método}\label{sec:metodo}
+
+Esta revisión sigue el procedimiento de Kitchenham y Charters para revisiones sistemáticas en ingeniería de software \cite{kitchenham2007} y se reporta conforme a la declaración PRISMA 2020 \cite{page2021prisma}. El procedimiento se organiza en tres fases (planificación, conducción y reporte) cuyas actividades se resumen en la Tabla~\ref{tab:proceso}. Antes de la búsqueda se elaboró un protocolo que fijó las preguntas de investigación, la estrategia de búsqueda, los criterios de selección, la evaluación de la calidad y el proceso de extracción y síntesis. \pend{Indicar si el protocolo se registró y, en su caso, el repositorio, el identificador y las enmiendas.} Cada etapa se describe en los apartados siguientes.
+
+\input{tablas/tab_proceso}
+
+\subsection{Preguntas de investigación}
+
+El primer paso del protocolo fue formular las preguntas que orientan la revisión (Tabla~\ref{tab:rq}). Su alcance se delimitó con el marco PICO:
+\begin{itemize}
+\item \textbf{Población:} datos visuales protegidos mediante perturbación proactiva.
+\item \textbf{Intervención:} contramedidas aplicadas a esos datos o a su entrenamiento.
+\item \textbf{Comparación:} entrenamiento con datos protegidos sin la contramedida, complementado con el entrenamiento limpio en condiciones comparables.
+\item \textbf{Resultado:} persistencia del efecto protector y recuperación del rendimiento.
+\end{itemize}
+
+\input{tablas/tab_rq}
+
+Cada pregunta cumple una función distinta:
+\begin{itemize}
+\item \textbf{RQ1} caracteriza las protecciones propuestas: cómo se generan, qué restricciones imponen, en qué modalidades y tareas se aplican y con qué conjuntos de datos y arquitecturas se evalúan. Esta caracterización es necesaria para interpretar las respuestas posteriores, porque la robustez de una protección depende de su mecanismo.
+\item \textbf{RQ2} identifica las contramedidas evaluadas y el modelo de adversario bajo el que se aplican. Una contramedida solo es relevante si sus supuestos sobre el conocimiento, el acceso y los recursos del adversario son verosímiles para el escenario de protección.
+\item \textbf{RQ3} cuantifica cuánto rendimiento recupera el adversario y cuánto efecto protector persiste. Es la pregunta central de la revisión.
+\item \textbf{RQ4} examina las referencias experimentales y las métricas con las que se mide la robustez, para determinar en qué condiciones los resultados de estudios distintos pueden compararse.
+\end{itemize}
+
+\subsection{Estrategia de búsqueda}
+
+\subsubsection{Fuentes de información}
+
+Se consultaron las cuatro bases de datos de la Tabla~\ref{tab:bases}. Se eligieron por su cobertura de las revistas y actas de congresos de aprendizaje automático, visión por computadora y seguridad, y porque permiten búsquedas booleanas sobre los metadatos y la exportación de los registros. Como fuente complementaria se incorporó una colección de artículos conocidos por el equipo, consultada en la plataforma Undermind, que se reporta como otros métodos.
+
+\input{tablas/tab_bases}
+
+\subsubsection{Cadena de búsqueda}
+
+La cadena combinó cinco conceptos mediante el operador OR (Tabla~\ref{tab:cadena}):
+\begin{itemize}
+\item la terminología propia de los datos no aprendibles;
+\item los ataques de disponibilidad, restringidos a contextos de aprendizaje con imágenes;
+\item las perturbaciones protectoras o proactivas;
+\item el envenenamiento indiscriminado y contrastivo;
+\item el camuflaje frente al reconocimiento facial.
+\end{itemize}
+Los ataques de disponibilidad se acotaron con términos de imagen y aprendizaje porque, sin esa restricción, el término recupera estudios de disponibilidad de servicios de red. La cadena se adaptó a la sintaxis de cada base y se aplicaron los filtros de periodo (2020--2026) y de tipo documental (artículo de revista y ponencia de congreso). En Web of Science, por ejemplo, la consulta fue:
+
+\begin{quote}
+\footnotesize
+TS=(``unlearnable example*'' OR ``unlearnable data'' OR ``unlearnable dataset*'' OR ``unlearnable sample*'' OR ``unlearnability'' OR ``error-minimizing noise'' OR ``unexploitable data'' OR ``robust unlearnable example*'' OR ((``availability attack*'' OR ``availability poison*'') AND (image* OR ``training data'' OR ``deep learning'' OR ``machine learning'')) OR ``data-protecting perturbation*'' OR ``protective perturbation*'' OR ``proactive perturbation*'' OR ``indiscriminate poison*'' OR ``contrastive poison*'' OR (cloak* AND (``face recognition'' OR ``facial recognition''))) AND PY=(2020-2026)
+\end{quote}
+
+Las búsquedas se ejecutaron en octubre de 2026. Las cadenas completas de cada base se incluyen como material suplementario.
+
+\input{tablas/tab_cadena}
+
+\subsection{Criterios de selección}
+
+Los criterios de inclusión (Tabla~\ref{tab:inclusion}) delimitan los estudios que pueden responder las preguntas de investigación. Los criterios de exclusión (Tabla~\ref{tab:exclusion}) descartan los estudios que, aun tratando el tema, no cumplen otras condiciones necesarias. Dos de ellos separan fenómenos próximos que la búsqueda recupera con frecuencia: las protecciones que actúan solo en la inferencia (CE6) y las dirigidas contra modelos generativos (CE7). El uso de un modelo generativo como contramedida para purificar los datos no activa el criterio CE7.
+
+\input{tablas/tab_inclusion}
+\input{tablas/tab_exclusion}
+
+La selección se realizó en dos etapas:
+\begin{enumerate}
+\item Tras eliminar los registros duplicados y las versiones de un mismo trabajo, dos revisores examinaron de forma independiente el título y el resumen de cada registro. Los registros sin una decisión clara pasaron a la lectura del texto completo.
+\item En la etapa de elegibilidad, un revisor leyó el texto completo de cada estudio y el segundo revisor contrastó la decisión con la ficha de extracción y el acta de revisión del estudio.
+\end{enumerate}
+Las discrepancias se resolvían por consenso; no se presentaron discrepancias en ninguna de las dos etapas.
+
+\subsection{Evaluación de la calidad}
+
+La calidad de cada estudio incluido se valoró con las ocho preguntas de la Tabla~\ref{tab:calidad}. Las preguntas cubren la descripción técnica de la protección y de la contramedida, la identificación de datos y modelos, la separación entre desarrollo y prueba, la adecuación de los comparadores, la validez de las métricas, la incertidumbre, el reporte completo y la mesura de las conclusiones. La suma de las valoraciones, entre 0 y 8, no se utilizó para excluir estudios de la revisión, sino para decidir su participación en la síntesis.
+
+\input{tablas/tab_calidad_preguntas}
+
+\subsection{Extracción de datos}
+
+Los datos se extrajeron con un formulario común para todos los estudios (Tabla~\ref{tab:extraccion}). Cada valor se registró junto con su localización en la fuente (página, tabla o figura) y con su estado: informado, no informado, no evaluado por el estudio o no aplicable. La ausencia de una evaluación no se interpretó como un resultado nulo. Cuando un estudio presentaba varias configuraciones experimentales, se extrajeron por separado los resultados de cada una. \pend{Declarar el uso de herramientas de inteligencia artificial en la extracción y el control humano aplicado, conforme a la política editorial de la revista.}
+
+\input{tablas/tab_extraccion}
+
+\subsection{Síntesis de los datos}\label{sec:sintesis}
+
+\paragraph{Comparabilidad.} Cada par formado por la condición protegida y la condición con contramedida se clasificó según su comparabilidad:
+\begin{itemize}
+\item \emph{sustentada}, cuando ambas condiciones comparten conjunto de datos, arquitectura, protocolo de entrenamiento y métrica, y la contramedida está especificada;
+\item \emph{limitada}, cuando falta uno de esos elementos;
+\item \emph{no determinable}, cuando la fuente no permite establecerla.
+\end{itemize}
+La ausencia de repeticiones o de medidas de dispersión se consideró una limitación de la precisión del resultado, no de su comparabilidad. Las magnitudes de la Sección~\ref{sec:condiciones} se calcularon solo para los pares con comparabilidad sustentada.
+
+\paragraph{Niveles de síntesis.} Todos los estudios incluidos se caracterizaron para responder RQ1, RQ2 y RQ4. Participaron en la síntesis los estudios con una valoración de calidad igual o superior a 4,5 sobre 8 o con al menos una comparación sustentada. La síntesis cuantitativa de RQ3 se basó en los estudios con al menos una comparación sustentada.
+
+\paragraph{Agrupación.} Las protecciones se agruparon según su estrategia de generación y las contramedidas según su familia. Cuando una condición combinaba contramedidas de varias familias, se asignó a la familia con mayor capacidad esperada de eliminar la perturbación, en este orden: purificación generativa, aumentos adversarios, entrenamiento adversario, transformación y compresión, aumentos de datos, proyección y sondas lineales, cambio de paradigma y detección.
+
+\paragraph{Agregación.} Las comparaciones de un mismo estudio no son independientes y su número varía mucho entre estudios. Por ello, la agregación se realizó en dos pasos: primero se obtuvo la mediana dentro de cada estudio y después la mediana y el rango intercuartílico entre estudios. Como indicador de neutralización se calculó, para cada estudio, la proporción de comparaciones que quedan a 5~pp o menos del entrenamiento limpio, y se promedió entre estudios; los umbrales de 2 y 10~pp se informan como análisis de sensibilidad. No se realizó un metaanálisis, debido a la dependencia entre comparaciones, a la escasez de medidas de dispersión y a la heterogeneidad de las configuraciones.

@@ -1,0 +1,77 @@
+%% ===================================================================
+\section{Discusión}\label{sec:discusion}
+
+Esta sección interpreta los resultados de la Sección~\ref{sec:resultados} para cada pregunta de investigación. También examina sus implicaciones para la evaluación de las protecciones.
+
+\subsection{RQ1: estrategias de protección}
+
+La investigación se concentra en protecciones que dependen de un modelo, ya sea un sustituto optimizado por muestra o un generador entrenado. Esta dependencia tiene una consecuencia para la robustez: la protección queda ligada a la arquitectura, los datos y el régimen de entrenamiento con que se generó, y su transferencia a otros aprendices debe demostrarse en cada caso. Los atajos sintéticos evitan esa dependencia y tienen un costo de generación menor. Sin embargo, su patrón es simple y regular, lo que en principio facilita que una contramedida lo identifique \cite{S0043}.
+
+La ampliación a reconocimiento facial, pares imagen-texto, vídeo y datos tridimensionales es reciente y se apoya en pocos estudios por dominio. Por ello, la caracterización de esos dominios es todavía descriptiva. La recuperación autorizada, examinada en solo cuatro estudios, es la dimensión menos desarrollada, pese a que condiciona la utilidad práctica de la protección para quien sí tiene derecho a usar los datos.
+
+\subsection{RQ2: contramedidas y modelo de adversario}
+
+Las contramedidas más evaluadas, como el entrenamiento adversario, las transformaciones de la entrada y los aumentos de datos, son también las más fáciles de aplicar y las que menos recursos suponen. La purificación generativa, que la síntesis identifica como la más eficaz, se evalúa en menos estudios y requiere recursos que pocos modelos de adversario contemplan, como un modelo de difusión preentrenado o una muestra de datos limpios. Esta asimetría tiene una consecuencia directa: una protección evaluada solo frente a las contramedidas convencionales no aporta evidencia sobre un adversario con acceso a modelos generativos, que hoy es un escenario verosímil.
+
+Que siete estudios no declaren qué conoce el adversario sobre la protección limita la interpretación de sus resultados. La recuperación de una contramedida depende de si el adversario conoce la familia de la protección, sus parámetros o la existencia misma de la protección. Las protecciones adaptadas a una contramedida conocida responden a un escenario en el que el titular anticipa al adversario. Su evaluación frente a esa misma contramedida no indica cómo se comportan frente a otras.
+
+\subsection{RQ3: persistencia de la protección y recuperación del adversario}
+
+Entre las comparaciones interpretables, la protección rara vez se neutraliza por completo, pero tampoco persiste intacta. El adversario recupera una mediana de 26~pp y el rendimiento queda a 37~pp del entrenamiento limpio. Esta posición intermedia no permite calificar las protecciones como robustas en general, porque el resultado depende de la contramedida.
+
+La purificación generativa deja las protecciones evaluadas a 8~pp del entrenamiento limpio. Su eficacia es similar frente a los tres tipos principales de protección, lo que sugiere que actúa eliminando la perturbación con independencia de su mecanismo. En cambio, los aumentos de datos convencionales apenas afectan a ninguna protección. Una explicación posible es que varias protecciones incorporan los aumentos en su generación \cite{S0090,S0095}; esta revisión no permite comprobarla.
+
+El entrenamiento adversario muestra una dependencia clara del tipo de protección: recupera más frente a la maximización del error que frente a la minimización del error, y menos frente a los atajos sintéticos. Este patrón es coherente con que el entrenamiento adversario contrarresta perturbaciones cuyo efecto depende de la sensibilidad del modelo a cambios acotados en la entrada. Los atajos sintéticos, en cambio, operan como correlaciones espurias que no requieren esa sensibilidad. La explicación es una hipótesis y no se contrastó en los estudios incluidos.
+
+La diferencia entre los estudios que proponen contramedidas y los que proponen protecciones es el hallazgo con mayores implicaciones metodológicas. Los primeros informan el doble de recuperación que los segundos. Varias explicaciones son compatibles con este resultado y no son excluyentes:
+\begin{itemize}
+\item las familias de contramedida evaluadas difieren entre los dos grupos;
+\item los estudios de contramedida pueden emplear protecciones de referencia más débiles;
+\item los estudios de protección pueden presentar versiones ajustadas a las contramedidas que ellos mismos evalúan;
+\item cada grupo puede informar preferentemente los resultados que favorecen su contribución.
+\end{itemize}
+La revisión no permite separarlas. En cualquier caso, la robustez de una protección no puede establecerse solo a partir de la evaluación de sus autores.
+
+\subsection{RQ4: referencias experimentales y comparabilidad}
+
+La exactitud de clasificación ofrece una base común de medición, pero las referencias que la acompañan no son homogéneas. La omisión del entrenamiento limpio con la misma contramedida, presente en 23 de los 55 estudios con contramedida, impide separar dos componentes de la pérdida remanente: la que se debe a la protección y la que causa la propia contramedida. La ausencia de un umbral operativo deja sin criterio la pregunta de cuándo una protección falla. Que 43 estudios no informen repeticiones impide valorar si las diferencias pequeñas dentro de un estudio superan la variación entre ejecuciones.
+
+Los resultados de esta revisión sugieren un conjunto mínimo de elementos de reporte que haría comparables los estudios:
+\begin{enumerate}
+\item informar siempre el entrenamiento limpio, el protegido, el protegido con contramedida y el limpio con la misma contramedida, bajo el mismo protocolo;
+\item especificar por completo cada contramedida, con sus parámetros, su presupuesto, el número de épocas y los datos auxiliares que emplea;
+\item declarar el conocimiento y los recursos del adversario, en particular el acceso a modelos generativos y a datos limpios;
+\item informar el número de repeticiones y una medida de dispersión;
+\item definir un umbral operativo de protección suficiente, por ejemplo una brecha mínima aceptable respecto del entrenamiento limpio;
+\item evaluar las protecciones frente a contramedidas de terceros o frente a un conjunto común, como el que propone APBench \cite{S0111}.
+\end{enumerate}
+Estos elementos derivan de las deficiencias observadas y no se validaron empíricamente en esta revisión.
+
+\subsection{Comparación con revisiones previas}
+
+Las revisiones existentes señalan la robustez como un desafío abierto \cite{li2025survey,zhang2026sok}. Esta revisión precisa la magnitud de ese desafío bajo un criterio explícito de comparabilidad y muestra que depende de la familia de contramedida, del tipo de protección y de quién realiza la evaluación. La restricción a las comparaciones sustentadas descartó el 55,2~\% de los resultados extraídos, cuya diferencia no podía atribuirse a la contramedida. Una agregación sin ese filtro habría mezclado efectos de la contramedida con diferencias de protocolo.
+
+%% ===================================================================
+\section{Amenazas a la validez}\label{sec:amenazas}
+
+\paragraph{Validez de constructo.} La recuperación se midió casi siempre como exactitud de clasificación. Esta medida no captura otros usos de los datos protegidos, como la extracción de representaciones o el ajuste fino, ni la restauración del dato original. La agrupación de protecciones y contramedidas es una construcción de esta revisión. Cuando una condición combinaba varias contramedidas, la regla de asignación pudo ubicarla en una familia distinta de la que sus autores consideran principal.
+
+\paragraph{Validez interna.} En la etapa de elegibilidad, el segundo revisor no releyó los textos completos: contrastó cada decisión con la ficha de extracción y el acta de revisión. Este procedimiento reduce la independencia de esa decisión. La evaluación de la calidad la realizó un solo revisor por estudio. Los juicios de comparabilidad requieren interpretar recetas de entrenamiento a veces incompletas, lo que introduce un componente subjetivo. \pend{Indicar el alcance de la verificación de la extracción por un segundo revisor.}
+
+\paragraph{Validez externa.} La síntesis cuantitativa procede casi exclusivamente de la clasificación de imagen 2D, con predominio de CIFAR-10 y ResNet-18. Sus resultados no se extienden al vídeo, a los datos tridimensionales, al reconocimiento facial ni a los modelos de gran escala. La exclusión de las preimpresiones sin publicación arbitrada deja fuera trabajos citados en el área, y siete textos completos no pudieron obtenerse.
+
+\paragraph{Validez de las conclusiones.} Dos estudios aportan el 44,8~\% de las comparaciones de la síntesis cuantitativa. La agregación por estudio mitiga ese peso y el análisis sin ellos no cambió la mediana, pero varias familias y combinaciones se basan en uno a tres estudios. La escasez de medidas de dispersión impide estimar la precisión de las diferencias. La búsqueda se limitó a cuatro bases de datos y a una colección previa del equipo, sin búsqueda manual en las actas de los congresos de aprendizaje automático, donde se publica la mayor parte de los estudios del área.
+
+%% ===================================================================
+\section{Conclusiones}\label{sec:conclusiones}
+
+Esta revisión sistemática examinó la robustez y la reversibilidad de las perturbaciones proactivas frente a las contramedidas adversarias en el entrenamiento no autorizado de modelos discriminativos. Se siguieron las directrices de Kitchenham y Charters y la declaración PRISMA 2020. De 770 registros identificados en cuatro bases de datos y una colección previa, se seleccionaron 64 estudios primarios publicados entre 2020 y 2026, y se sintetizaron 3070 comparaciones con comparabilidad sustentada de 23 de ellos.
+
+Las protecciones propuestas dependen mayoritariamente de un modelo sustituto o de un generador y se evalúan sobre todo en clasificación de imagen 2D. Frente a las contramedidas evaluadas, el adversario recupera una mediana de 26~pp de exactitud y el rendimiento queda a 37~pp del entrenamiento limpio. La purificación generativa casi neutraliza las protecciones, con independencia de su mecanismo, mientras que los aumentos de datos convencionales apenas las afectan. El entrenamiento adversario es eficaz frente a las protecciones por maximización del error y lo es poco frente a los atajos sintéticos. Los estudios que proponen contramedidas informan el doble de recuperación que los que proponen protecciones.
+
+La evidencia disponible no permite afirmar que las protecciones actuales sean robustas frente a un adversario con acceso a modelos generativos. La comparación entre estudios está limitada por la omisión frecuente del entrenamiento limpio con la misma contramedida, de la especificación completa de las contramedidas, de las repeticiones y de cualquier umbral operativo. El trabajo futuro debería:
+\begin{itemize}
+\item evaluar las protecciones frente a contramedidas de terceros y bajo un conjunto común de condiciones;
+\item extender la evidencia cuantitativa al vídeo, a los datos tridimensionales y a los modelos multimodales;
+\item desarrollar la recuperación autorizada, que hoy se examina en muy pocos estudios.
+\end{itemize}

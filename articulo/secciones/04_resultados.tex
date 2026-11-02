@@ -1,0 +1,179 @@
+%% ===================================================================
+\section{Resultados}\label{sec:resultados}
+
+La aplicación del protocolo condujo a la selección de 64 estudios primarios (Fig.~\ref{fig:prisma}). En la fase de identificación se obtuvieron 739 registros de las bases de datos (Scopus, 157; Web of Science, 30; IEEE Xplore, 96; SpringerLink, 456) y 31 por otros métodos. Antes del cribado se eliminaron 128 registros: 101 duplicados entre bases, 19 duplicados entre otros métodos y las bases, y 8 versiones de un mismo trabajo.
+
+Se cribaron por título y resumen 642 registros, de los cuales se excluyeron 556. Los motivos principales fueron no estudiar datos visuales pertinentes (248) y estar fuera del periodo (161). De los 86 textos completos solicitados, 7 no pudieron obtenerse. Se evaluaron 79 y se excluyeron 15:
+\begin{itemize}
+\item 9 porque la protección actúa solo en la inferencia de un modelo fijo;
+\item 5 porque su objetivo es exclusivamente impedir el entrenamiento de modelos generativos;
+\item 1 porque estudia otro fenómeno.
+\end{itemize}
+De los 64 estudios incluidos, 41 participaron en la síntesis y 23 aportaron comparaciones sustentadas a la síntesis cuantitativa de la recuperación.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{prisma_rsl.pdf}
+\caption{Diagrama de flujo PRISMA 2020 de la selección de estudios}\label{fig:prisma}
+\end{figure}
+
+\subsection{Distribución de las publicaciones}
+
+Los estudios incluidos se publicaron entre 2020 y 2026 (Fig.~\ref{fig:anio}). El número de publicaciones aumentó a partir de 2023: el 79,7~\% de los estudios se publicó entre 2023 y 2025. El valor de 2026 corresponde a un año incompleto, ya que la búsqueda se realizó en octubre.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.75\textwidth]{fig_anio.pdf}
+\caption{Distribución de los estudios incluidos por año de publicación}\label{fig:anio}
+\end{figure}
+
+Los 64 estudios se publicaron en 33 sedes distintas (Tabla~\ref{tab:sedes}). El 84,4~\% son ponencias de congreso y el 15,6~\%, artículos de revista. Siete sedes reúnen más de un estudio y concentran el 59,4~\% del total:
+\begin{itemize}
+\item la International Conference on Learning Representations, 7 estudios;
+\item Advances in Neural Information Processing Systems, 6;
+\item Lecture Notes in Computer Science, 6;
+\item la AAAI Conference on Artificial Intelligence, 5;
+\item la IEEE/CVF Conference on Computer Vision and Pattern Recognition, 5;
+\item Proceedings of Machine Learning Research, 5;
+\item la ACM International Conference on Multimedia, 4.
+\end{itemize}
+Ninguna revista publicó más de un estudio.
+
+\input{tablas/tab_sedes}
+
+\subsection{Calidad de los estudios}
+
+La valoración de la calidad tuvo una media de 4,16 y una mediana de 4,0 sobre 8, con un rango de 1,5 a 7,0. La Tabla~\ref{tab:calidadres} muestra que la mayoría de los aspectos se resolvió como cumplimiento parcial. La validez de las métricas fue el aspecto mejor valorado (48 estudios con Sí). La separación entre desarrollo y prueba y la incertidumbre de los resultados concentraron la información insuficiente, con 27 y 36 estudios respectivamente. Solo tres estudios informaron la incertidumbre de forma completa \cite{S0123,S0148,S0150}. De los 41 estudios que participaron en la síntesis, 18 lo hicieron por su valoración de calidad, 11 por aportar comparaciones sustentadas y 12 por ambos motivos.
+
+\input{tablas/tab_calidad_resultados}
+
+\subsection{RQ1: ¿Qué estrategias y algoritmos de perturbación proactiva se han propuesto, cómo se caracterizan y en qué tareas, conjuntos de datos y arquitecturas se han evaluado?}\label{sec:rq1}
+
+De los 64 estudios, 43 proponen una protección, 18 proponen o evalúan una contramedida y 3 son análisis o bancos de pruebas \cite{S0111,S0123,S0133}. Las 43 protecciones se agruparon en seis estrategias de generación (Tabla~\ref{tab:estrategias} y Fig.~\ref{fig:estrategias}). El 69,8~\% de ellas requiere entrenar un modelo sustituto o un generador.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.8\textwidth]{fig_estrategias.pdf}
+\caption{Número de protecciones por estrategia de generación}\label{fig:estrategias}
+\end{figure}
+
+\input{tablas/tab_estrategias}
+
+\paragraph{Optimización por muestra con un modelo sustituto.} Es la estrategia más frecuente, con 18 estudios. Su forma básica es la minimización bi-nivel del error: se optimiza un ruido que reduce la pérdida de un modelo sustituto, de modo que el modelo aprende el ruido y no el contenido \cite{S0014}. Sobre esta base se han propuesto variantes en varias direcciones:
+\begin{itemize}
+\item robustas al entrenamiento adversario, mediante optimizaciones de tres niveles o sustitutos entrenados adversarialmente \cite{S0075,S0040,S0138};
+\item que incorporan los aumentos de datos en la generación \cite{S0090,S0095};
+\item adaptadas al aprendizaje contrastivo \cite{S0112,S0027,S0101} y a los modelos imagen-texto \cite{S0124,S0143}.
+\end{itemize}
+Otros estudios sustituyen el objetivo de minimización por la maximización del error de Bayes \cite{S0023}, la alineación de gradientes con una red autorizada \cite{S0030} o la optimización en el espacio latente de un autocodificador de difusión \cite{S0061}.
+
+\paragraph{Generadores aprendidos.} Doce estudios entrenan una red que produce la perturbación, lo que evita optimizar cada muestra y permite escalar a grandes conjuntos o transferir la protección entre tareas. Los generadores se han aplicado a:
+\begin{itemize}
+\item escenarios sin etiquetas \cite{S0003,S0154};
+\item reconocimiento facial \cite{S0020,S0038};
+\item generación guiada por texto \cite{S0039,S0062};
+\item transferencia entre dominios \cite{S0056};
+\item aprendizaje multitarea \cite{S0072};
+\item segmentación \cite{S0074,S0202};
+\item seguimiento de objetos en vídeo \cite{S0151}.
+\end{itemize}
+Uno de ellos se formula como un juego entre el protector y el aprendiz \cite{S0088}.
+
+\paragraph{Atajos sintéticos sin modelo sustituto.} Siete estudios inducen una correlación espuria entre un patrón simple y la clase, sin entrenar ningún modelo. Los patrones son:
+\begin{itemize}
+\item filtros convolucionales aleatorios por clase \cite{S0063};
+\item un único píxel \cite{S0068};
+\item ruido separable por clase \cite{S0137};
+\item combinaciones de convolución y cambio de un píxel \cite{S0126,S0144};
+\item transformaciones geométricas por clase en nubes de puntos \cite{S0148};
+\item patrones de Fourier para detección de objetos \cite{S0127}.
+\end{itemize}
+
+\paragraph{Otras estrategias.} Tres estudios ocultan una señal asociada a la clase en un dominio transformado, mediante esteganografía en frecuencia \cite{S0032,S0041} o redes invertibles \cite{S0047}. Dos estudios camuflan los rasgos faciales para desplazarlos hacia otra identidad \cite{S0060,S0135}. Un estudio sustituye regiones de la imagen según su relevancia para el clasificador \cite{S0647}.
+
+\paragraph{Escenarios de evaluación.} Considerando los 64 estudios, la modalidad dominante es la imagen 2D (49 estudios). Le siguen la imagen facial (6), los pares imagen-texto (5), las nubes de puntos (2), el vídeo (1) y los volúmenes médicos (1). La tarea más evaluada es la clasificación (48 estudios), seguida del reconocimiento facial (6) y la recuperación imagen-texto (4). CIFAR-10 se utilizó en 46 estudios, los subconjuntos de ImageNet en 38 y CIFAR-100 en 36. Las arquitecturas más frecuentes fueron ResNet-18 (45 estudios), DenseNet (33), ResNet-50 (31) y VGG (30); los transformadores de visión aparecen en 16 estudios.
+
+\paragraph{Recuperación autorizada.} Solo cuatro estudios evalúan una vía para que un actor legítimo restituya la aprendibilidad: una red autorizada \cite{S0030}, un limpiador entregado por el titular \cite{S0066}, marcas de agua reversibles \cite{S0107} o los parámetros de las transformaciones por clase \cite{S0148}. En el resto de los estudios, la reversibilidad se examina solo desde la perspectiva del adversario.
+
+\subsection{RQ2: ¿Qué contramedidas se han evaluado frente a estas protecciones y bajo qué conocimientos, capacidades, acceso y recursos del adversario?}\label{sec:rq2}
+
+Cincuenta y seis estudios evalúan al menos una contramedida. Los ocho restantes presentan la protección sin probarla frente a contramedidas \cite{S0020,S0066,S0101,S0124,S0143,S0151,S0154,S0202}. La Tabla~\ref{tab:contramedidas} y la Fig.~\ref{fig:contramedidas} resumen las familias evaluadas. Las tres más frecuentes son:
+\begin{itemize}
+\item el entrenamiento adversario, en 38 estudios;
+\item la transformación y compresión de la entrada, en 35;
+\item los aumentos de datos convencionales, en 32.
+\end{itemize}
+Les siguen los aumentos adversarios (15 estudios) y la purificación generativa (13). La proyección y las sondas lineales, el cambio del paradigma de aprendizaje y la detección de muestras protegidas aparecen en seis estudios o menos. El número de familias por estudio varía de forma considerable: 14 estudios evalúan una sola y 17, cuatro o más.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.8\textwidth]{fig_contramedidas.pdf}
+\caption{Número de estudios que evalúan cada familia de contramedida}\label{fig:contramedidas}
+\end{figure}
+
+\input{tablas/tab_contramedidas}
+
+El modelo de adversario se describe con niveles de detalle distintos. Los escenarios van:
+\begin{itemize}
+\item desde un aprendiz que recibe los datos protegidos con sus etiquetas y controla el entrenamiento \cite{S0137,S0071};
+\item pasando por un aprendiz que desconoce qué muestras están protegidas \cite{S0049,S0093};
+\item hasta un adversario con conocimiento completo de la protección \cite{S0113} o que trata al protector como una caja negra con acceso a consultas \cite{S0129}.
+\end{itemize}
+Siete estudios no declaran qué conoce el adversario sobre la protección.
+
+Las contramedidas de purificación suponen recursos adicionales: un modelo de difusión preentrenado \cite{S0145,S0094}, una pequeña muestra de datos limpios para entrenar el purificador \cite{S0079} o pares de datos protegidos y limpios obtenidos por fuga de la protección \cite{S0129}. Varios estudios de protección generan perturbaciones adaptadas a una contramedida conocida, como el entrenamiento adversario o los aumentos de datos \cite{S0075,S0095,S0040,S0090}, y evalúan la protección frente a esa misma contramedida.
+
+\subsection{RQ3: ¿Qué grado de protección persiste y qué recuperación del rendimiento logra el adversario tras aplicar las contramedidas evaluadas?}\label{sec:rq3}
+
+De las 7025 comparaciones entre la condición protegida y la condición con contramedida extraídas de 57 estudios, el 44,8~\% tuvo comparabilidad sustentada, el 50,7~\% comparabilidad limitada y el 4,4~\% comparabilidad no determinable. La síntesis cuantitativa se basa en 3070 comparaciones sustentadas con resultado calculable, procedentes de 23 estudios. Veintidós de ellos evalúan clasificación de imagen 2D y uno, aprendizaje de prompts sobre un modelo imagen-texto \cite{S0054}.
+
+En el conjunto de la síntesis, la mediana de la recuperación del adversario fue de 26,4~pp de exactitud (rango intercuartílico entre estudios: 8,0--34,3) y la brecha mediana al entrenamiento limpio, de 37,0~pp. En promedio, el 12,6~\% de las comparaciones de cada estudio quedó a 5~pp o menos del entrenamiento limpio (5,3~\% con un umbral de 2~pp y 24,7~\% con uno de 10~pp). En 547 comparaciones de 19 estudios, la contramedida redujo el rendimiento en lugar de recuperarlo. Excluir los dos estudios con más comparaciones \cite{S0047,S0105}, que reúnen el 44,8~\% del total, no modificó la mediana (26,5~pp).
+
+\paragraph{Recuperación por familia de contramedida.} La Tabla~\ref{tab:familias} y la Fig.~\ref{fig:recuperacion} desagregan los resultados por familia:
+\begin{itemize}
+\item La purificación generativa alcanzó la mayor recuperación, con una mediana de 66,8~pp y una brecha de 7,9~pp al entrenamiento limpio, en tres estudios \cite{S0079,S0093,S0129}.
+\item El entrenamiento adversario (10 estudios) y la transformación y compresión de la entrada (12 estudios) obtuvieron recuperaciones intermedias, de 25,9 y 25,0~pp, con brechas de 39,1 y 23,9~pp.
+\item Los aumentos de datos convencionales (8 estudios) recuperaron 4,7~pp y dejaron la mayor brecha, de 66,4~pp.
+\end{itemize}
+Las familias evaluadas en uno o dos estudios se presentan para completar la descripción.
+
+\input{tablas/tab_familias}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.85\textwidth]{fig_recuperacion.pdf}
+\caption{Recuperación mediana por estudio según la familia de contramedida. Cada punto es un estudio y la línea vertical indica la mediana entre estudios; entre paréntesis, número de estudios}\label{fig:recuperacion}
+\end{figure}
+
+\paragraph{Recuperación por tipo de protección.} La Tabla~\ref{tab:matriz} cruza la familia de contramedida con el tipo de protección evaluada:
+\begin{itemize}
+\item La purificación generativa obtuvo recuperaciones similares, entre 64,1 y 67,0~pp, frente a las protecciones por minimización del error, por maximización del error y por atajos sintéticos.
+\item El entrenamiento adversario recuperó 58,7~pp frente a la maximización del error (6 estudios), 41,6~pp frente a la minimización del error (8 estudios) y 22,3~pp frente a los atajos sintéticos (8 estudios).
+\item Los aumentos de datos recuperaron menos de 5~pp frente a los tres tipos de protección.
+\item Frente al envenenamiento contrastivo, el entrenamiento adversario (dos estudios) y la transformación de la entrada (tres estudios) obtuvieron medianas negativas.
+\end{itemize}
+
+\input{tablas/tab_matriz}
+
+\paragraph{Recuperación según la orientación del estudio.} Los estudios que proponen o evalúan una contramedida informaron una recuperación mediana de 34,3~pp y una brecha de 13,3~pp al entrenamiento limpio, con el 27~\% de sus comparaciones a 5~pp o menos de él (Tabla~\ref{tab:orientacion}). Los estudios que proponen una protección informaron una recuperación de 15,7~pp, una brecha de 47,9~pp y un 4~\% de comparaciones próximas al entrenamiento limpio. La composición de las familias evaluadas difiere entre ambos grupos: los estudios de protección evalúan sobre todo aumentos de datos, entrenamiento adversario y transformaciones de la entrada, mientras que todas las purificaciones generativas proceden de estudios de contramedida.
+
+\input{tablas/tab_orientacion}
+
+\paragraph{Precisión de los resultados.} De los 23 estudios de la síntesis cuantitativa:
+\begin{itemize}
+\item 13 no informan la incertidumbre de sus resultados;
+\item 5 la informan de forma insuficiente;
+\item 4 la informan de forma parcial;
+\item 1 la informa de forma completa.
+\end{itemize}
+El Apéndice~\ref{app:nucleo} presenta los resultados de cada estudio.
+
+\subsection{RQ4: ¿Qué referencias experimentales y métricas se utilizan para evaluar la robustez y la reversión adversaria, y en qué condiciones permiten comparar los resultados?}\label{sec:rq4}
+
+La Tabla~\ref{tab:referencias} resume las condiciones experimentales y las métricas informadas. La exactitud de clasificación sobre datos de prueba limpios es la métrica principal en 54 estudios. Se complementa con métricas de calidad perceptual en 12 estudios, de detección en 7, de recuperación imagen-texto en 5 y de segmentación o detección de objetos en 5. Ningún estudio define un umbral a partir del cual la protección se considere suficiente o neutralizada.
+
+La condición protegida sin contramedida se informa en 62 estudios, el entrenamiento limpio en 55 y la condición con contramedida en 55. En cambio, el entrenamiento limpio con la misma contramedida solo se informa en 32. De los 55 estudios con condición de contramedida, 23 no informan ese control y 7 no informan el entrenamiento limpio. Cuarenta y tres estudios no indican el número de repeticiones de sus experimentos.
+
+\input{tablas/tab_referencias}
+
+Los resultados comparables entre estudios se concentran en un subconjunto reducido de configuraciones. De los 23 estudios con comparaciones sustentadas, 22 evalúan clasificación de imagen 2D, 21 utilizan CIFAR-10 y ResNet-18, y 20 incluyen subconjuntos de ImageNet. El 55,2~\% de las comparaciones extraídas no alcanzó una comparabilidad sustentada porque faltaba alguno de los elementos de equivalencia entre condiciones: el conjunto de datos, la arquitectura, el protocolo de entrenamiento, la métrica o la especificación de la contramedida.
