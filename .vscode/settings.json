@@ -1,0 +1,20 @@
+{
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.latex.recipe.default": "Compilar artículo (Docker)",
+  "latex-workshop.latex.outDir": "%DIR%/build",
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "Compilar artículo (Docker)",
+      "tools": ["compilar-articulo"]
+    }
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "compilar-articulo",
+      "command": "bash",
+      "args": ["%WORKSPACE_FOLDER%/compilar-articulo.sh"],
+      "cwd": "%WORKSPACE_FOLDER%"
+    }
+  ]
+}

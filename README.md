@@ -50,6 +50,25 @@ Rscript scripts/instalar.R
 
 Se requiere R 4.5 o compatible, fuentes DejaVu Sans y las bibliotecas gráficas del sistema. Las versiones efectivamente utilizadas quedan registradas en `resultados/auditoria/sessionInfo.txt` y `resultados/tablas/versiones_paquetes.csv`.
 
+## Redactar el nuevo artículo con LaTeX
+
+El entorno de redacción usa Docker y LaTeX Workshop, con la misma clase editorial `sn-jnl` y el estilo numérico `sn-mathphys-num` del entorno anterior. Se copió únicamente la configuración técnica: el manuscrito y la bibliografía empiezan vacíos, con marcadores de título y autor.
+
+1. Abrir la carpeta completa del repositorio en VS Code y tener Docker iniciado.
+2. Instalar la extensión recomendada **LaTeX Workshop** (`james-yu.latex-workshop`).
+3. Redactar en [articulo/manuscrito.tex](articulo/manuscrito.tex).
+4. Al guardar, VS Code ejecuta la compilación con Docker y actualiza **un único PDF** en `articulo/build/manuscrito.pdf`.
+
+También se puede compilar desde la raíz del proyecto:
+
+```bash
+bash compilar-articulo.sh
+```
+
+La imagen `rsl-latex:trixie` se reutiliza si existe; en otro equipo se construye automáticamente con `Dockerfile.latex`. No hace falta instalar LaTeX en el equipo. En Windows, ejecutar el script desde WSL con Docker Desktop integrado.
+
+Las nuevas referencias van en [articulo/referencias.bib](articulo/referencias.bib) y las figuras en `articulo/figuras/`. Los archivos temporales y el PDF de trabajo quedan excluidos de Git; el historial conserva las versiones del fuente. Los datos y gráficos bibliométricos del proyecto siguen disponibles como resultados separados.
+
 ## Scripts
 
 1. `01_importar.R`: lectura de los cinco exports y mapeo a tags de bibliometrix.
