@@ -1,0 +1,6 @@
+Las seis redes conservan exactamente nombres, frecuencias, pesos y comunidades frente a la versión previa.
+Corpus, coordenadas MCA y métricas temáticas: hashes sin cambios.
+Se conservaron los 637 documentos y los cinco exports originales.
+Revisión visual de los seis PNG: completada.
+Las coordenadas x_original/y_original permiten reproducir el ajuste sin deriva.
+Las tablas de coordenadas muestran la disposición final; las distancias de red son gráficas.

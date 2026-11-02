@@ -9,4 +9,5 @@ done
 for campo in DE KW_Merged; do
   Rscript scripts/06_red_estilo_vos.R "$campo" 2>&1 | tee "resultados/auditoria/red_estilo_vos_${campo}.log"
 done
+Rscript scripts/07_compactar_redes.R 2>&1 | tee resultados/auditoria/07_compactar_redes.log
 Rscript scripts/05_entrega.R 2>&1 | tee resultados/auditoria/05_entrega.log

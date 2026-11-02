@@ -1,0 +1,7 @@
+"figura","nodos","enlaces","clusters","ancho_pulgadas","alto_pulgadas","rectangulos_sin_interseccion","nodos_pesos_y_clusters_sin_cambios"
+"02_coocurrencia",50,203,6,13,9,TRUE,TRUE
+"03_colaboracion_autores",37,88,7,12,8.3,TRUE,TRUE
+"04_colaboracion_paises",17,29,5,10.5,7.4,TRUE,TRUE
+"12_acoplamiento_bibliografico",40,252,4,13.5,9.6,TRUE,TRUE
+"13_red_coocurrencia_estilo_VOS",64,256,5,13,9.2,TRUE,TRUE
+"14_red_coocurrencia_KW_Merged_estilo_VOS",65,1200,5,13,9.2,TRUE,TRUE

@@ -1,0 +1,8 @@
+Presentación sobre seis redes calculadas previamente con bibliometrix.
+Las coordenadas originales de presentación se conservan en x_original e y_original.
+Compresión radial con exponente 0.58 y aproximación del 45% de los centros de las comunidades.
+Acomodo determinista de etiquetas y nodos juntos, con límites físicos de texto sin intersección.
+Los componentes desconectados de países se mantienen separados visualmente.
+No cambian selección de nodos, frecuencias, enlaces, pesos ni pertenencias a comunidades.
+MCA y mapa temático: sin cambios de coordenadas, métricas ni umbrales.
+Las distancias finales en las redes son de presentación, no medidas estadísticas.

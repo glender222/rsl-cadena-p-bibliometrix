@@ -81,6 +81,7 @@ Las referencias van en [articulo/referencias.bib](articulo/referencias.bib) y la
 4. `04_flujos_acoplamiento.R`: tres campos nativo/interactivo y acoplamiento.
 5. `05_entrega.R`: verificaciones independientes, atlas PDF y guía de resultados.
 6. `06_red_estilo_vos.R`: redes de coocurrencia con enlaces curvos y etiquetas centradas; admite `DE` o `KW_Merged`.
+7. `07_compactar_redes.R`: compacta seis redes y acomoda sus etiquetas, sin cambiar nodos, frecuencias, enlaces, pesos ni comunidades.
 
 Las funciones de bibliometrix empleadas incluyen `convert2df`, `metaTagExtraction`, `biblioAnalysis`, `cocMatrix`, `biblioNetwork`, `networkPlot`, `conceptualStructure`, `thematicMap` y `threeFieldsPlot`. La presentación final se ajusta con herramientas gráficas de R; los valores estadísticos se conservan.
 
@@ -95,6 +96,9 @@ Calculada en R con `biblioNetwork()` y `networkPlot()`. Se conserva el número d
 Rscript scripts/06_red_estilo_vos.R KW_Merged
 # Solo palabras clave de autor: 134 documentos con DE.
 Rscript scripts/06_red_estilo_vos.R DE
+# Aplicar la disposición compacta y actualizar el atlas.
+Rscript scripts/07_compactar_redes.R
+Rscript scripts/05_entrega.R
 ```
 
 Los archivos empiezan con `14_red_coocurrencia_KW_Merged_estilo_VOS` y `13_red_coocurrencia_estilo_VOS`, respectivamente, en PNG de 300 ppp, SVG y PDF. Las coordenadas y los enlaces verificados están en `resultados/tablas/`; los objetos nativos de bibliometrix, en `resultados/objetos/`.
@@ -102,7 +106,8 @@ Los archivos empiezan con `14_red_coocurrencia_KW_Merged_estilo_VOS` y `13_red_c
 - Paleta, tipografía y tamaños de exportación: `scripts/00_config.R`.
 - Coordenadas de nodos y nube: CSV de `resultados/tablas/`.
 - Redes: parámetros `n`, `minfreq`, `minedge` en `03_graficos.R`.
-- Etiquetas: `geom_text_repel` con semilla fija. Sus líneas indican el punto original.
+- Disposición compacta de redes: `scripts/07_compactar_redes.R`; las coordenadas anteriores quedan en `x_original` e `y_original`.
+- Etiquetas factoriales: `geom_text_repel` con semilla fija. Sus líneas indican el punto original.
 - Tres campos: posiciones de nodos y cintas en `04_flujos_acoplamiento.R`.
 
 No mover las coordenadas factoriales para cambiar la interpretación del análisis. El archivo `coordenadas_factoriales_MCA.csv` guarda los valores calculados por bibliometrix.
